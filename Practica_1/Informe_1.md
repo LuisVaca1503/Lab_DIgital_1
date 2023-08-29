@@ -150,6 +150,25 @@ Para su proceso de instalación en el SO Linux, dentro de la terminal de comando
 ```
 De manera detallada este comando le solicita a conda que instale desde el canal llamado "litex-hub", el paquete iverilog (en alusión a Icarus Verilog puntualmente). Cabe acalarar que Los canales son repositorios en línea donde se almacenan paquetes con software y bibliotecas listos para ser descargados e instalados. 
 
+**Yosys** 
+
+Yosys es una herramienta de código abierto, esencial en el flujo de diseño de hardware digital, ya que permite a los diseñadores transformar descripciones de alto nivel en diseños implementables y optimizad. Su nombre completo es "Yosys Open SYnthesis Suite"
+
+Para su proceso de instalación en el SO, dentro de la terminal de comandos escribir:
+```bash
+conda install -c "litex-hub" yosys
+```
+Al igual que con el paquete iverilog, este comando le solicita a conda que instale desde el canal llamado "litex-hub", el paquete yosys. 
+
+**GtkWave**
+
+GTKWave es una herramienta de codigo abierto, enfocada a  diseñadores y verificadores de hardware digital, pues esta les permite visualizar y analizar las formas de onda generadas por simulaciones de circuitos digitales. Permitiendo  comprender mejor el comportamiento del hardware y a identificar problemas potenciales durante el proceso de diseño y verificación.
+
+Para su proceso de instalación en el SO, dentro de la terminal de comandos escribir:
+```bash
+$ conda install -c conda-forge gtkwave 
+```
+De manera detallada, este comando le solicita a conda que instale desde el canal llamado "conda-forge", el paquete gtkwave.
     
 
 ## Resultados
