@@ -122,6 +122,17 @@ La primera vez que se abre el SO Linux, por lo general la escala de Pantalla no 
 
 ![image](https://github.com/LuisVaca1503/Lab_DIgital_1/assets/92941277/b6a696dd-509e-48f9-820d-d049a33d1fd0)
 
+* Permiso para copiar, pegar y arrastrar entre Linux y Windows.
+
+Es habitual tener este error si no se otorgan los permisos requeridos, el primer paso es ir a Configuración / General y se selecciona la subpestaña avanzado, donde dice Portapapeles compartido y Arrastrar y Soltar, los cambiamos a Bidireccional.
+
+![image](https://github.com/LuisVaca1503/Lab_DIgital_1/assets/92941277/f7fc2cc6-53f0-4c03-8221-37241ec2e151).
+
+Volvemos al inicio del Programa y donde dice Almacenamiento en negrita, IDE secundario maestro, seleccionamos unidad óptica vacía, y clickeamos seleccionar/crear una imagen de disco.
+
+![image](https://github.com/LuisVaca1503/Lab_DIgital_1/assets/92941277/c29bd4c8-b440-4328-9b8e-4d35401aeaa0)
+
+
   
 
 ## Limitaciones
