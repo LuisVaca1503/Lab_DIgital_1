@@ -169,7 +169,25 @@ Para su proceso de instalación en el SO, dentro de la terminal de comandos escr
 $ conda install -c conda-forge gtkwave 
 ```
 De manera detallada, este comando le solicita a conda que instale desde el canal llamado "conda-forge", el paquete gtkwave.
-    
+
+**Grahpviz**
+Graphviz es una herramienta para generar visualizaciones gráficas de grafos y diagramas de manera automática a partir de descripciones de alto nivel. Esto resulta especialmente valioso para entender las relaciones y las conexiones en sistemas complejos y datos estructurados.
+
+Para su proceso de instalación en el SO, dentro de la terminal de comandos escribir:
+```bash
+$ conda install -c conda-forge graphviz
+```
+De manera detallada, este comando le solicita a conda que instale desde el canal llamado "conda-forge", el paquete graphviz.
+
+
+Finalmente, posterior a la instalación de cada uno de estos paquetes, es posible verificar que fueron instalados correctamente revisando la version instalada, con la siguiente linea de comandos en la terminal:
+
+```bash
+$ iverilog -V # Permite observer la version de iverilog instalada
+$ yosys --version # Permite observer la version de Yosys instalada
+$ gtkwave --version # Permite observer la version de gtkwave instalada
+$ dot -V # Permite observer la version de Graphviz instalada
+```
 
 ## Resultados
 Presenta los resultados de tu análisis o investigación de manera clara y concisa. Puedes utilizar tablas, gráficos u otros elementos visuales para resaltar los puntos clave.
