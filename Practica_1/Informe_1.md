@@ -106,12 +106,20 @@ No borrara absolutamente ningún archivo del SO principal, solo escala nivel de 
 
 Posterior a la instalación del SO, es necesario la instalación de cierto programas para desarrollo del curso, estos son:
 * Miniconda
- * Verilog 
+* Verilog 
 * Yosys
 * GtkWave
+
+  
 A continuación se explican de manera detallada que son y su proceso de instalación en Linux: 
+
+
 **Miniconda:**
-        Anaconda es una distribución de los lenguajes de programación Python y R para computación científica, tiene como ventaja simplificar la gestión e                 implementación de paquetes. Sin embargo, para algunos proyectos, no es necesario todo el conjunto de herramientas que Anaconda proporciona,                      para aquellos casos, existe Miniconda. Esta en comparación con la mencionada previamente, permite instalar de manera manual solo las herramientas                requeridas.
+
+Anaconda es una distribución de los lenguajes de programación Python y R para computación científica, tiene como ventaja simplificar la gestión e                implementación de paquetes. Sin embargo, para algunos proyectos, no es necesario todo el conjunto de herramientas que Anaconda proporciona,                      para aquellos casos, existe Miniconda. Esta en comparación con la mencionada previamente, permite instalar de manera manual solo las herramientas                requeridas.
+
+Para su proceso de instalación: 
+    
     
     
     
