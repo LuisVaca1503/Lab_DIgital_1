@@ -132,10 +132,20 @@ Volvemos al inicio del Programa y donde dice Almacenamiento en negrita, IDE secu
 
 ![image](https://github.com/LuisVaca1503/Lab_DIgital_1/assets/92941277/c29bd4c8-b440-4328-9b8e-4d35401aeaa0)
 
+Se nos abrira el explorador de archivos donde debemos buscar el iso llamado VBoxGuestAdditions.iso, en la ubicación donde se instalo Virtual Box, aunque por defecto suele estar en C:\Program Files\Oracle\VirtualBox, despues de agregar el iso a la unidad óptica, iniciamos la máquina virtual en el inicio del SO, encontraremos un iso que se abrira.
+
+![image](https://github.com/LuisVaca1503/Lab_DIgital_1/assets/92941277/57285078-5f15-4da8-9747-d9f22a1a98bc)
+
+
+Una vez abierto vamos al botón que esta en la esquina superior derecha que dice ejecutar programa:
+
+![image](https://github.com/LuisVaca1503/Lab_DIgital_1/assets/92941277/363d69d3-836c-475f-b26a-c107b76f7dbf)
+
+Esto abrira la consola donde se ejecutara el programa, una vez finalizado reiniciamos la máquina virtual, y ya podremos copiar pegar y arrastrar.
 
   
 
-## Limitaciones
+##Limitaciones
 Discute cualquier limitación que pueda haber afectado tus resultados o el alcance del informe.
 
 ## Futuras direcciones (si aplica)
