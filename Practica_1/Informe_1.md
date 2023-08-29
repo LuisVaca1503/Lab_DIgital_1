@@ -128,7 +128,7 @@ Se tomara como ejemplo el archivo _Miniconda3 Linux 64-bit_, posterior a su desc
 
 ```bash
 cd Downloads # Este comando redirige al usuario a la carpeta en cuestión 
-bash Miniconda3-Linux-64-bit.sh # Este comando permite simplificar la ejecuión de comandos contenidos en el archivo instalado
+bash Miniconda3-Linux-64-bit.sh # Este comando permite simplificar la ejecución de comandos contenidos en el archivo instalado
 #Posteriormente se deben seguir la instrucciones alli dadas y despues reiniciar la consola.
 ```
 Una vez ejecutadas esta series de comando, nuevamente en la terminal:
@@ -140,6 +140,15 @@ Una vez ejecutadas esta series de comando, nuevamente en la terminal:
 (digital) $ python --version # Este comando permite ver la versión instalada de Python, en este caso la version 3.11 para
 #poder continuar con la instalacion de los otros programas.
 ```
+**Icarus Verilog** 
+
+Verilog es un lenguaje de descripción de hardware (HDL), es ideal para la programación sencilla de FPGA’s Altera, este lenguaje soporta el diseño, prueba e implementación de circuitos analógicos, digitales y de señal mixta a diferentes niveles de abstracción. No obstante, Icarus Verilog se trata de un compilador, encargado de compilar código de fuente escrito en Verilog.
+
+Para su proceso de instalación en el SO Linux, dentro de la terminal de comandos:
+```bash
+(base) $ conda install -c "litex-hub" iverilog
+```
+De manera detallada este comando le solicita a conda que instale desde el canal llamado "litex-hub", el paquete iverilog (en alusión a Icarus Verilog puntualmente). Cabe acalarar que Los canales son repositorios en línea donde se almacenan paquetes con software y bibliotecas listos para ser descargados e instalados. 
 
     
 
