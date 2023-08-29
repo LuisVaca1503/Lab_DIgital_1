@@ -243,3 +243,18 @@ Si este informe sugiere oportunidades para futuras investigaciones o acciones, m
 *[Que es Graphviz](https://es.wikipedia.org/wiki/Graphviz)
 *[Comandos de instalacion paquetes](https://github.com/johnnycubides/digital-electronic-1-101/blob/main/installTools/README.md)
 
+##Metodo Partición
+
+En un principio, este método comparte similitudes con la instalación por medio de máquina virtual. Sin embargo hay que tener varios factores en cuenta para el desarrollo de este proceso. Se hará énfasis en aquellas partes que son unicas en este método.
+
+### Partición del Disco
+
+Cabe recalcar que para este caso, deseamos tener instalado Linux y Windows a la vez, por ello se procede con este tipo de instalación. Si no se desea conservar Windows como sistema operativo por alguna razón, este paso puede ser ignorado.
+
+Dicho esto, para llevar a cabo la partición se puede hacer click derecho en el icono de inicio de Windows. En el menú desplegable accedemos a la opción "Administración de Disco" o "Disk Management". Una vez dentro, podemos ver las diferentes particiones del disco; algunas de ellas son de suma importancia para el dispositivo porque tienen configuraciones que es mejor evitar ser alteradas de alguna forma. 
+
+En la parte inferior vamos a escoger una de las particiones que tiene en su nombre NTFS, que a su vez es una de las particiones con mayor capacidad de memoria. Dando click derecho sobre ese recuadro, vamos a ver una opción llamada "Reducir Volúmen" o "Shrink Volume". En el nuevo menú, hay una casilla que permite escribir la cantidad de memoria que deseamos reducir de la partición principal para crear una nueva.
+
+
+###
+
