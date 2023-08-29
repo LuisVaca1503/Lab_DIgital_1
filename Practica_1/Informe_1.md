@@ -235,7 +235,10 @@ Discute cualquier limitación que pueda haber afectado tus resultados o el alcan
 Si este informe sugiere oportunidades para futuras investigaciones o acciones, menciónalas aquí.
 
 ## Referencias
-Incluye cualquier referencia bibliográfica, enlace web o recurso que hayas utilizado en el informe.
-
+* [Que es Anaconda](https://eiposgrados.com/blog-python/que-es-anaconda/)
+* [Que es Miniconda](https://danielbenites.com/como-instalar-miniconda-en-linux-guia-paso-a-paso/)
+* [Que es iverilog](https://www.solvusoft.com/es/file-extensions/software/open-source/icarus-verilog/)
+* [Que es Yosys](https://www.linuxadictos.com/yosys-un-marco-open-source-para-herramientas-de-sintesis-verilog.html#:~:text=Para%20quienes%20no%20han%20escuchado,para%20varios%20dominios%20de%20aplicaci%C3%B3n.)
+* [Que es GtkWave](https://academicos.azc.uam.mx/oan/linux/ghdlDebian.html)
 
 
