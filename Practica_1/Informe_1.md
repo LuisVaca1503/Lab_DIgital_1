@@ -112,7 +112,15 @@ Cabe recalcar que para este caso, deseamos tener instalado Linux y Windows a la 
 
 Dicho esto, para llevar a cabo la partición se puede hacer clic derecho en el icono de inicio de Windows. En el menú desplegable accedemos a la opción "Administración de Disco" o "Disk Management". Una vez dentro, podemos ver las diferentes particiones del disco; algunas de ellas son de suma importancia para el dispositivo porque tienen configuraciones que es mejor evitar ser alteradas de alguna forma. 
 
+<p align="center">
+    <img src=https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Disk%20Management.png alt="Disk Management" height="270">
+</p>
+
 En la parte inferior vamos a escoger una de las particiones que tiene en su nombre NTFS, que a su vez es una de las particiones con mayor capacidad de memoria. Dando clic derecho sobre ese recuadro, vamos a ver una opción llamada "Reducir Volumen" o "Shrink Volume". En el nuevo menú, hay una casilla que permite escribir la cantidad de memoria que deseamos reducir de la partición principal para crear una nueva.
+
+<p align="center">
+    <img src= https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Shrink%20Volume.png alt="Shrink Volume" height="270">
+</p>
 
 Para saber cuanta memoria deseas en la nueva partición en GB, es tan sencillo como multiplicar la cantidad de memoria por 1026, con eso se tiene el resultado en MB. En la imagen donde se pueden ver las particiones, se puede observar que hay una partición de 96.00 GB. Esto en MB es tan sencillo haciendo la respectiva operación, dando al final el valor 98.496. Esta partición es solo un ejemplo, ya dependerá del usuario la cantidad de memoria que desee usar en el SO de Linux.
 
@@ -120,9 +128,15 @@ Para saber cuanta memoria deseas en la nueva partición en GB, es tan sencillo c
 
 La instalación y ejecución del instalador, a partir de cierto punto, va a ser igual que con el método de la máquina virtual. Sin embargo, para instalarlo con la partición del disco, vamos a necesitar de una memoria con el instalador, ya que todo se va a hacer desde la BIOS del dispositivo. Descargada la máquina virtual, al igual que en el otro método, vamos a proceder a tener la memoria con este sistema.
 
-En este caso accedemos en el buscador web a balena.io, luego en productos buscamos BalenaEtcher, y finalmente le damos Descargar Etcher.
+En este caso accedemos en el buscador web a balena.io, luego en productos buscamos BalenaEtcher, y finalmente le damos Descargar Etcher. Para este caso escogemos la opción Windows x86/x64, pero eso depende de cada caso, tanto de equipo como del sistema operativo que estamos usando en el momento.
+
+<p align="center">
+    <img src=https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/BalenaEtcher.png alt="balenaEtcher" height="240"><img src= https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Download%20Etcher.png alt="DownloadEtcher" height="240">
+</p>
 
 Una vez instalado y ejecutado balenaEtcher, vamos a ver un menú como el de a continuación. En la primera parte, escogemos la opción "Flash from file", donde nos dirigirá a la sección de archivos para buscar el archivo de Linux que vamos a instalar eventualmente. Después, en la segunda parte "Select Target" vamos a tener que escoger la memoria que vamos a usar como instalador del sistema operativo. Cabe recordar que la memoria a partir de completar este proceso no podrá ser usado de manera común hasta que formateemos de nuevo la memoria (una vez completada la instalación de Linux, podremos hacer dicho proceso tranquilamente). Escogida la memoria que se va a usar, finalmente terminamos de aceptar todo y esperamos a que el proceso sea completado.
+
+
 
 ### Instalación:
 
