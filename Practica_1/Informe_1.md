@@ -116,7 +116,13 @@ Interpreta los resultados y ofrece insights sobre su significado. ¿Cómo se rel
 Resume las conclusiones clave a las que has llegado en el informe. 
 
 ## Recomendaciones (si aplica)
-Si tienes recomendaciones basadas en tus resultados, este es el lugar para presentarlas.
+* Problemas con VB:
+* Pantalla Completa:
+La primera vez que se abre el SO Linux, por lo general la escala de Pantalla no se visualiza correctamente para solucionar esto es tan simple como entrar a General / Pantalla y cambiar el controlador de vídeo a VBoxSVGA:
+
+![image](https://github.com/LuisVaca1503/Lab_DIgital_1/assets/92941277/b6a696dd-509e-48f9-820d-d049a33d1fd0)
+
+  
 
 ## Limitaciones
 Discute cualquier limitación que pueda haber afectado tus resultados o el alcance del informe.
