@@ -4,17 +4,22 @@ Para colocar la información basta con escribir el contenido
 
 ## Introducción
 
-![image](https://github.com/LuisVaca1503/Lab_DIgital_1/assets/92941277/6e19863b-cb63-4de0-b815-e5c0dac69325)
+<!-- ![image](https://github.com/LuisVaca1503/Lab_DIgital_1/assets/92941277/6e19863b-cb63-4de0-b815-e5c0dac69325)-->
 
-Actualmente hay una cantidad extensa de sistemas operativos, que trabajan en diferentes entornos que permiten el uso de estas herramientas como interfaces para el usuario para que se pueda comunicar con el sistema, sin embargo estas distribuciones tienen una índole de acceso libre o privado, como es el caso de Windows pues a pesar de que corre en la mayoría de dispositivos portátiles de 32 y 64 bits, requiere de una licencia puesto que su uso es controlado por Microsoft, hay una línea de sistemas operativos que ha sido clave para varios aparatos electrónico tal es el caso de GNU/Linux como Android usan el kernel Linux como base software, porque es de acceso libre, no es correcto decir que linux es solamente un sistema operativo, ya que hay varias versiones si es que se le puede llamar así, ya que cada versión que sacan por lo general se basa en un versión completamente distinta recogiendo cosas importantes de esa variante para mejorarla, y que logré adecuarse a los gustos o necesidades del usuario, sea por su diseño, poco consumo de recurso, o por la característica de que hay ciertos programas que corren solo en linux, siendo una ventaja considerable para ciertos tipos de ambiente.
+
+Actualmente hay una cantidad extensa de sistemas operativos, que trabajan en diferentes entornos que permiten el uso de estas herramientas como interfaces para el usuario para que se pueda comunicar con el sistema, sin embargo estas distribuciones tienen una índole de acceso libre o privado, como es el caso de Windows pues a pesar de que corre en la mayoría de dispositivos portátiles de 32 y 64 bits, requiere de una licencia puesto que su uso es controlado por Microsoft. Hay una línea de sistemas operativos que ha sido clave para varios aparatos electrónico tal es el caso de GNU/Linux como Android usan el kernel Linux como base software, porque es de acceso libre, no es correcto decir que linux es solamente un sistema operativo, ya que hay varias versiones si es que se le puede llamar así, ya que cada versión que sacan por lo general se basa en un versión completamente distinta recogiendo cosas importantes de esa variante para mejorarla, y que logré adecuarse a los gustos o necesidades del usuario, sea por su diseño, poco consumo de recurso, o por la característica de que hay ciertos programas que corren solo en linux, siendo una ventaja considerable para ciertos tipos de ambiente.
+
+<p align="center">
+    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/assets/92941277/6e19863b-cb63-4de0-b815-e5c0dac69325" alt="Logo Linux Mint" width="320" height="300">
+</p>
 
 ## Objetivos
 
 • Identificar las diferentes herramientas necesarias para la instalación de Linux Mint.
 
-•	Lograr configurar adecuadamente las propiedades de una máquina virtual, para el correcto uso de Linux Mint
+•	Lograr configurar adecuadamente las propiedades de una máquina virtual, para el correcto uso de Linux Mint.
 
-•	Entender el significado de una máquina virtual
+•	Comprender el proceso de instalación de paquetes, aplicaciones y actualizaciones mediante comandos en la consola.
 
 •	Ejecutar adecuadamente los pasos o comandos para la instalación y ejecución de las herramientas en Linux Mint
 
