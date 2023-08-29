@@ -119,8 +119,19 @@ A continuación se explican de manera detallada que son y su proceso de instalac
 Anaconda es una distribución de los lenguajes de programación Python y R para computación científica, tiene como ventaja simplificar la gestión e                implementación de paquetes. Sin embargo, para algunos proyectos, no es necesario todo el conjunto de herramientas que Anaconda proporciona,                      para aquellos casos, existe Miniconda. Esta en comparación con la mencionada previamente, permite instalar de manera manual solo las herramientas                requeridas.
 
 Para su proceso de instalación: 
+
+En primer lugar, debe accederse al siguiente link [Ultimas versiones de Miniconda ](https://docs.conda.io/en/latest/miniconda-other-installer-links.html), alli se selecciona preferiblemente la ultima versión de Python para el sistema operativo en cuestión, en este caso linux, como se observa en la siguiente imagen:
+
+![image](instalador_conda.png)
     
-    
+Se tomara como ejemplo el archivo _Miniconda3 Linux 64-bit_, posterior a su descarga, en la terminal de comandos se ejecutan los siguientes comandos:
+
+```bash
+cd Downloads # Este comando redirige al usuario a la carpeta en cuestión 
+bash Miniconda3-Linux-64-bit.sh # Este comando permite simplificar la ejecuión de comandos contenidos en el archivo instalado
+#Posteriormente se deben seguir la instrucciones alli dadas y despues reiniciar la consola.
+```
+
     
     
 
