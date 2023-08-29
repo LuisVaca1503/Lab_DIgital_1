@@ -1,6 +1,4 @@
 # Practica No.1 _Instalacion de Herramientas_
-Para colocar la información basta con escribir el contenido
-
 
 ## Introducción
 
