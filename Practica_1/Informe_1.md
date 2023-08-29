@@ -131,8 +131,16 @@ cd Downloads # Este comando redirige al usuario a la carpeta en cuestión
 bash Miniconda3-Linux-64-bit.sh # Este comando permite simplificar la ejecuión de comandos contenidos en el archivo instalado
 #Posteriormente se deben seguir la instrucciones alli dadas y despues reiniciar la consola.
 ```
+Una vez ejecutadas esta series de comando, nuevamente en la terminal:
 
-    
+```bash
+(base) $ conda update conda # Este comando permite actualizar Miniconda a su ultima version
+(base) $ conda create -n digital python=3.11 # Crea y configura la variable de entorno digital para python=3.11
+(base) $ conda activate digital  # Activa la variable de entorno de Miniconda denominada digital
+(digital) $ python --version # Este comando permite ver la versión instalada de Python, en este caso la version 3.11 para
+#poder continuar con la instalacion de los otros programas.
+```
+
     
 
 ## Resultados
