@@ -103,8 +103,8 @@ Hay que marcar la casilla de los codecs multimedia.
 
 No borrara absolutamente ningún archivo del SO principal, solo escala nivel de la máquina virtual.
 
-### Desarrollo
-Aca podemos describir el proceso de instalacion, tanto en particion de disco como en maquina virtual
+### Implementación de Herramientas 
+    Posterior a la instalación 
 
 ## Resultados
 Presenta los resultados de tu análisis o investigación de manera clara y concisa. Puedes utilizar tablas, gráficos u otros elementos visuales para resaltar los puntos clave.
