@@ -240,5 +240,6 @@ Si este informe sugiere oportunidades para futuras investigaciones o acciones, m
 * [Que es iverilog](https://www.solvusoft.com/es/file-extensions/software/open-source/icarus-verilog/)
 * [Que es Yosys](https://www.linuxadictos.com/yosys-un-marco-open-source-para-herramientas-de-sintesis-verilog.html#:~:text=Para%20quienes%20no%20han%20escuchado,para%20varios%20dominios%20de%20aplicaci%C3%B3n.)
 * [Que es GtkWave](https://academicos.azc.uam.mx/oan/linux/ghdlDebian.html)
-
+*[Que es Graphviz](https://es.wikipedia.org/wiki/Graphviz)
+*[Comandos de instalacion paquetes](https://github.com/johnnycubides/digital-electronic-1-101/blob/main/installTools/README.md)
 
