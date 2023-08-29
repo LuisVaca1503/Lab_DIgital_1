@@ -242,10 +242,10 @@ $ dot -V # Permite observer la version de Graphviz instalada
 ```
 
 ## Resultados
-Presenta los resultados de tu análisis o investigación de manera clara y concisa. Puedes utilizar tablas, gráficos u otros elementos visuales para resaltar los puntos clave.
-**GraphViz** En la siguiente imagen se muestra, la instalación del paquete GraphViz mediante la terminal de comandos, siguiendo las instrucciones previamente mostradas: 
-![imagen](https://github.com/LuisVaca1503/Lab_DIgital_1/assets/73821820/0921255d-883f-4cf9-925d-db72e8343539)
 
+**GraphViz** En la siguiente imagen se muestra, la instalación del paquete GraphViz mediante la terminal de comandos, siguiendo las instrucciones previamente mostradas: 
+
+![imagen](https://github.com/LuisVaca1503/Lab_DIgital_1/assets/73821820/0921255d-883f-4cf9-925d-db72e8343539)
 
 Posterior a el comando, debe autorizarse o no la instalacion, mediante el comando _y_ o _n_. Como metodo de confirmacion, al final de la instalacion se observan los estados de la instalación, con la palabra de confirmación "Done".
 
@@ -253,7 +253,7 @@ Posterior a el comando, debe autorizarse o no la instalacion, mediante el comand
 Interpreta los resultados y ofrece insights sobre su significado. ¿Cómo se relacionan los resultados con los objetivos del informe? ¿Hay patrones o tendencias importantes?
 
 ## Conclusiones
-Resume las conclusiones clave a las que has llegado en el informe. 
+* Mediante el proceso de maquina virtual puede concluirse que se tiene un control mayor  en el proceso de instalación, pues se puede limitar las asignaciones de hardware que puede usar este ordenador asi mismo como los recursos que consume.
 
 ## Recomendaciones (si aplica)
 * Problemas con VB:
