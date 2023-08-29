@@ -102,7 +102,45 @@ Hay que marcar la casilla de los codecs multimedia.
 
 No borrara absolutamente ningún archivo del SO principal, solo escala nivel de la máquina virtual.
 
-### Implementación de Herramientas 
+## Método Partición
+
+En un principio, este método comparte similitudes con la instalación por medio de máquina virtual. Sin embargo, hay que tener varios factores en cuenta para el desarrollo de este proceso. Se hará énfasis en aquellas partes que son únicas en este método.
+
+### Partición del Disco
+
+Cabe recalcar que para este caso, deseamos tener instalado Linux y Windows a la vez, por ello se procede con este tipo de instalación. Si no se desea conservar Windows como sistema operativo por alguna razón, este paso puede ser ignorado.
+
+Dicho esto, para llevar a cabo la partición se puede hacer clic derecho en el icono de inicio de Windows. En el menú desplegable accedemos a la opción "Administración de Disco" o "Disk Management". Una vez dentro, podemos ver las diferentes particiones del disco; algunas de ellas son de suma importancia para el dispositivo porque tienen configuraciones que es mejor evitar ser alteradas de alguna forma. 
+
+En la parte inferior vamos a escoger una de las particiones que tiene en su nombre NTFS, que a su vez es una de las particiones con mayor capacidad de memoria. Dando clic derecho sobre ese recuadro, vamos a ver una opción llamada "Reducir Volumen" o "Shrink Volume". En el nuevo menú, hay una casilla que permite escribir la cantidad de memoria que deseamos reducir de la partición principal para crear una nueva.
+
+Para saber cuanta memoria deseas en la nueva partición en GB, es tan sencillo como multiplicar la cantidad de memoria por 1026, con eso se tiene el resultado en MB. En la imagen donde se pueden ver las particiones, se puede observar que hay una partición de 96.00 GB. Esto en MB es tan sencillo haciendo la respectiva operación, dando al final el valor 98.496. Esta partición es solo un ejemplo, ya dependerá del usuario la cantidad de memoria que desee usar en el SO de Linux.
+
+### Instalador
+
+La instalación y ejecución del instalador, a partir de cierto punto, va a ser igual que con el método de la máquina virtual. Sin embargo, para instalarlo con la partición del disco, vamos a necesitar de una memoria con el instalador, ya que todo se va a hacer desde la BIOS del dispositivo. Descargada la máquina virtual, al igual que en el otro método, vamos a proceder a tener la memoria con este sistema.
+
+En este caso accedemos en el buscador web a balena.io, luego en productos buscamos BalenaEtcher, y finalmente le damos Descargar Etcher.
+
+Una vez instalado y ejecutado balenaEtcher, vamos a ver un menú como el de a continuación. En la primera parte, escogemos la opción "Flash from file", donde nos dirigirá a la sección de archivos para buscar el archivo de Linux que vamos a instalar eventualmente. Después, en la segunda parte "Select Target" vamos a tener que escoger la memoria que vamos a usar como instalador del sistema operativo. Cabe recordar que la memoria a partir de completar este proceso no podrá ser usado de manera común hasta que formateemos de nuevo la memoria (una vez completada la instalación de Linux, podremos hacer dicho proceso tranquilamente). Escogida la memoria que se va a usar, finalmente terminamos de aceptar todo y esperamos a que el proceso sea completado.
+
+### Instalación:
+
+(Nota previa: Consultar el botón que permite acceder a la BIOS del computador donde se va a llevar a cabo la instalación de Linux).
+
+Para llegar a la instalación del sistema, vamos a tener que mantener la memoria colocada en el computador y vamos a tener que reiniciar el computador. Justo en el momento que prende el computador, necesitamos acceder a la BIOS del dispositivo. Para ello, vamos a tener que presionar el botón que nos permita acceder a dicha BIOS. Este botón puede variar en cada modelo de computador, por eso hay que consultar previamente el botón que nos permita acceder. Generalmente, puede ser ESC, F1, F12... Pero de nuevo, todo depende del modelo.
+
+A partir de aquí aparecerá la misma pestaña de instalación de la BIOS, al igual que en la instalación de la máquina virtual. Finalmente, terminaremos accediendo a Linux y comenzando el proceso de instalación al igual que en el otro método.
+
+Cuando llegamos a la parte de Tipo de instalación del sistema, esta es la parte que se diferencia del caso de máquina virtual, ya que si escogemos la opción del otro caso, se borrará el sistema operativo de Windows junto con todo el contenido que se guardaba en el momento. Para este punto tenemos casos:
+
+* Se puede presentar un caso en donde el sistema detecta automáticamente la partición del disco, esto es fácil porque solo tendremos que escoger la partición y la instalación llegará prácticamente a sus pasos finales.
+* Si no aparece esta opción automática, tendremos que ir a la parte de "Más opciones". A partir de ahí tendremos que hacer la respectiva partición o en su defecto, escoger la partición previamente realizada en Windows. Desde este punto ya continuaremos la instalación tal y como el instalador lo indica y llegaremos al mismo caso de la máquina virtual.
+
+A partir de ahora, si vas a usar Windows o Linux, vas a tener que iniciar el computador y en el menú de la BIOS escoger el SO que desees usar en cada momento.
+
+
+## Implementación de Herramientas 
 
 Posterior a la instalación del SO, es necesario la instalación de cierto programas para desarrollo del curso, estos son:
 * Miniconda
@@ -243,18 +281,5 @@ Si este informe sugiere oportunidades para futuras investigaciones o acciones, m
 *[Que es Graphviz](https://es.wikipedia.org/wiki/Graphviz)
 *[Comandos de instalacion paquetes](https://github.com/johnnycubides/digital-electronic-1-101/blob/main/installTools/README.md)
 
-##Metodo Partición
 
-En un principio, este método comparte similitudes con la instalación por medio de máquina virtual. Sin embargo hay que tener varios factores en cuenta para el desarrollo de este proceso. Se hará énfasis en aquellas partes que son unicas en este método.
-
-### Partición del Disco
-
-Cabe recalcar que para este caso, deseamos tener instalado Linux y Windows a la vez, por ello se procede con este tipo de instalación. Si no se desea conservar Windows como sistema operativo por alguna razón, este paso puede ser ignorado.
-
-Dicho esto, para llevar a cabo la partición se puede hacer click derecho en el icono de inicio de Windows. En el menú desplegable accedemos a la opción "Administración de Disco" o "Disk Management". Una vez dentro, podemos ver las diferentes particiones del disco; algunas de ellas son de suma importancia para el dispositivo porque tienen configuraciones que es mejor evitar ser alteradas de alguna forma. 
-
-En la parte inferior vamos a escoger una de las particiones que tiene en su nombre NTFS, que a su vez es una de las particiones con mayor capacidad de memoria. Dando click derecho sobre ese recuadro, vamos a ver una opción llamada "Reducir Volúmen" o "Shrink Volume". En el nuevo menú, hay una casilla que permite escribir la cantidad de memoria que deseamos reducir de la partición principal para crear una nueva.
-
-
-###
 
