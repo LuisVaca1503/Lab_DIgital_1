@@ -285,11 +285,9 @@ Esto abrira la consola donde se ejecutara el programa, una vez finalizado reinic
 
   
 
-##Limitaciones
-Discute cualquier limitación que pueda haber afectado tus resultados o el alcance del informe.
 
-## Futuras direcciones (si aplica)
-Si este informe sugiere oportunidades para futuras investigaciones o acciones, menciónalas aquí.
+
+
 
 ## Referencias
 * [Que es Anaconda](https://eiposgrados.com/blog-python/que-es-anaconda/)
