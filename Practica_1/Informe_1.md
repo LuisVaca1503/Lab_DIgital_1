@@ -82,13 +82,15 @@ Por último solo nos queda dirigirnos a la casilla de Linux Mint en Virtual Box,
 
 El inicio del SO, comienza con una subpestaña, un arranque parecido al de windows antes de llegar a la BIOS, y despues de un tiempo nos aparece estas opciones:
 
-![image](https://github.com/LuisVaca1503/Lab_DIgital_1/assets/92941277/275e1f7b-f6fb-470e-9b91-b3239a01fa55)
+![image](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/2349f9e221e1331b1074c98d41b756307d287489/Montar%20Bios.png)
 
 Solo debemos presionar Enter a la primera opción, siendo el nombre del SO montado en Linux.
 
-![image](https://github.com/LuisVaca1503/Lab_DIgital_1/assets/92941277/e5fd3356-049c-4d53-bd4c-82747972395c)
+
 
 Una vez en la interfax de Mint, nos aparecera en la esquina superior izquierda, ***Install Linux Mint***.
+
+![image](https://github.com/LuisVaca1503/Lab_DIgital_1/assets/92941277/e5fd3356-049c-4d53-bd4c-82747972395c)
 
 La instalación es netamente personal y a preferencia de cada usuario, aunque el idioma es importante dejarlo en inglés ya que la instalación de herramientas dentro de Linux Mint se utilizaran comandos en inglés en la consola, quitando eso la región del sistema, el nombre de usuario y contraseña si asi se desea es a elección personal.
 
