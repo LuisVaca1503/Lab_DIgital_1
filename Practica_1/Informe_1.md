@@ -35,13 +35,15 @@ La ultima aclaración es que la instalación de **Linux Mint** ( el de interes e
 * Links: [Página de Virtual Box](https://www.virtualbox.org/),[Linux Mint](https://linuxmint.com/)
 * Virtual Box:
 Bajando un poco nos encontraremos con el bóton de descarga
-![image]()
+![image](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/58c6760fbabee7569baec64db239092e03b36656/VB1.png)
 
 solo lo clickeamos y nos encontraremos con los diferentes versiones de SO para instalarlo, escogemos el que tengamos:
 
 ![image](https://github.com/LuisVaca1503/Lab_DIgital_1/assets/92941277/138007e3-571a-4346-a815-63e9d44e6e44)
 
 Ya teniendo el archivo descargado simplemente lo ejecutamos, y le damos Next a todo.
+
+
 
 * Linux Mint:
 
