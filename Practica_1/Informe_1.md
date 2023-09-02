@@ -39,7 +39,7 @@ Bajando un poco nos encontraremos con el bóton de descarga
 
 solo lo clickeamos y nos encontraremos con los diferentes versiones de SO para instalarlo, escogemos el que tengamos:
 
-![image](https://github.com/LuisVaca1503/Lab_DIgital_1/assets/92941277/138007e3-571a-4346-a815-63e9d44e6e44)
+![image](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/9125e6fdcc4e8ea13a5c88e060d737b41d2b5c44/Opciones%20Instalaci%C3%B3n.png)
 
 Ya teniendo el archivo descargado simplemente lo ejecutamos, y le damos Next a todo.
 
