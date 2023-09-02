@@ -133,7 +133,7 @@ La instalación y ejecución del instalador, a partir de cierto punto, va a ser 
 En este caso accedemos en el buscador web a balena.io, luego en productos buscamos BalenaEtcher, y finalmente le damos Descargar Etcher. Para este caso escogemos la opción Windows x86/x64, pero eso depende de cada caso, tanto de equipo como del sistema operativo que estamos usando en el momento.
 
 <p align="center">
-    <img src=https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/BalenaEtcher.png alt="balenaEtcher" height="240"><img src= https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Download%20Etcher.png alt="DownloadEtcher" height="240">
+    <img src=https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/BalenaEtcher.png alt="balenaEtcher" height="220"><img src= https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Download%20Etcher.png alt="DownloadEtcher" height="220">
 </p>
 
 Una vez instalado y ejecutado balenaEtcher, vamos a ver un menú como el de a continuación. En la primera parte, escogemos la opción "Flash from file", donde nos dirigirá a la sección de archivos para buscar el archivo de Linux que vamos a instalar eventualmente. Después, en la segunda parte "Select Target" vamos a tener que escoger la memoria que vamos a usar como instalador del sistema operativo. Cabe recordar que la memoria a partir de completar este proceso no podrá ser usado de manera común hasta que formateemos de nuevo la memoria (una vez completada la instalación de Linux, podremos hacer dicho proceso tranquilamente). Escogida la memoria que se va a usar, finalmente terminamos de aceptar todo y esperamos a que el proceso sea completado.
@@ -224,7 +224,12 @@ $ conda install -c conda-forge gtkwave
 ```
 De manera detallada, este comando le solicita a conda que instale desde el canal llamado "conda-forge", el paquete gtkwave.
 
-**Grahpviz**
+<p align="left">
+    <img src=https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Gtkwave1.png alt="Gtkwave" height="500">   <img src= https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Gtkwave2.png alt="Gtkwave" height="500">
+</p>
+
+**Graphviz**
+
 Graphviz es una herramienta para generar visualizaciones gráficas de grafos y diagramas de manera automática a partir de descripciones de alto nivel. Esto resulta especialmente valioso para entender las relaciones y las conexiones en sistemas complejos y datos estructurados.
 
 Para su proceso de instalación en el SO, dentro de la terminal de comandos escribir:
@@ -233,6 +238,9 @@ $ conda install -c conda-forge graphviz
 ```
 De manera detallada, este comando le solicita a conda que instale desde el canal llamado "conda-forge", el paquete graphviz.
 
+<p align="left">
+    <img src=https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Graphviz.png alt="Graphviz" height="500">
+</p>
 
 Finalmente, posterior a la instalación de cada uno de estos paquetes, es posible verificar que fueron instalados correctamente revisando la version instalada, con la siguiente linea de comandos en la terminal:
 
