@@ -251,13 +251,12 @@ $ dot -V # Permite observer la version de Graphviz instalada
 
 Posterior a el comando, debe autorizarse o no la instalacion, mediante el comando _y_ o _n_. Como metodo de confirmacion, al final de la instalacion se observan los estados de la instalación, con la palabra de confirmación "Done".
 
-## Discusión
-Interpreta los resultados y ofrece insights sobre su significado. ¿Cómo se relacionan los resultados con los objetivos del informe? ¿Hay patrones o tendencias importantes?
+
 
 ## Conclusiones
 * Mediante el proceso de maquina virtual puede concluirse que se tiene un control mayor  en el proceso de instalación, pues se puede limitar las asignaciones de hardware que puede usar este ordenador asi mismo como los recursos que consume.
 
-## Recomendaciones (si aplica)
+## Recomendaciones 
 * Problemas con VB:
 * Pantalla Completa:
 La primera vez que se abre el SO Linux, por lo general la escala de Pantalla no se visualiza correctamente para solucionar esto es tan simple como entrar a General / Pantalla y cambiar el controlador de vídeo a VBoxSVGA:
