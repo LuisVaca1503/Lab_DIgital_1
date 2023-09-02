@@ -96,11 +96,11 @@ La instalación es netamente personal y a preferencia de cada usuario, aunque el
 
 _Consideraciones Importantes_
 
-![image](https://github.com/LuisVaca1503/Lab_DIgital_1/assets/92941277/70bee429-1e48-48f5-9897-979e448b8f6f)
+![image](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/899cfebefd24dad61365ec36aede270aec64bbac/Codec%20Multimedia.png)
 
 Hay que marcar la casilla de los codecs multimedia.
 
-![image](https://github.com/LuisVaca1503/Lab_DIgital_1/assets/92941277/10aa04fb-9080-43c4-9ce7-ef7ac2252530)
+![image](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/899cfebefd24dad61365ec36aede270aec64bbac/Borrar%20disco.png)
 
 No borrara absolutamente ningún archivo del SO principal, solo escala nivel de la máquina virtual.
 
