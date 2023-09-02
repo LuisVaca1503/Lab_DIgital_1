@@ -60,7 +60,7 @@ Ejecutamos el el programa y nos llevara a esta interfaz:
 
 Agregamos una maquina virtual, y configuramos los parametros segun nuestro preferencia, he aqui el resumen:
 
-![image](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/6b4afde760bad9e11c428b97010812b59bf54c1f/Asignamiento.png)
+![image](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/e6fa6c42c6b15205c408de0c48eb9f501b5d939c/deded.png)
 
 en 1 definimos el nombre de Usuario, del SO, en 2 la ubicación de la carpeta de la maquina ( normalmente predefinido en la instalación de Virtual Box), 3 como dice la casilla nombre del SO invitado, 4 la memoria RAM asignada, 5 números de núcleos del procesador a asignar, y 6 el tamaño del disco que usara el SO.
 
