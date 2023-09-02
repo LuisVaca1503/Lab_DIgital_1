@@ -249,7 +249,32 @@ Digital es una aplicación que nos permite insertar compuertas lógicas, constru
 
 Antes de detallarnos en la descarga y la instalación debemos ir a la consola de linux y asegurarnos de tener java y los paquetes necesarios para la ejecución de este programa.
 
-Para hacerlo
+Para hacerlo solo ponemos este comando:
+
+```bash
+java --version
+```
+En caso de tener los componentes necesarios nos aparecera esta pantalla
+
+![image](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/c92f011c172474d28c2da12d4994c81d30f0a11f/Java%20version.png)
+
+Caso contrario ponemos este comando para instalar java y sus paquetes: (aplica solo para la arquitectura Debian)
+
+```bash
+$ sudo apt install openjdk-11-jdk 
+```
+
+Lo siguiente es instalar digital con el siguiente Link: [Digital](https://github.com/hneemann/Digital/releases/latest/download/Digital.zip)
+
+Una vez descargado nos dirigimos al zip y lo extraemos, vamos dentro de la carpeta y damos clic derecho al espacio blanco de la carpeta para ejecutar la consola:
+
+![imagen](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/c92f011c172474d28c2da12d4994c81d30f0a11f/Digitaljar.png)
+
+Por ultimo dentro de la consola ponemos este comando, para ejecutar el programa y con esto hemos terminado con la instalación de digital:
+```bash
+$ java -jar Digital.jar 
+```
+
 ## Resultados
 
 **GraphViz** En la siguiente imagen se muestra, la instalación del paquete GraphViz mediante la terminal de comandos, siguiendo las instrucciones previamente mostradas: 
