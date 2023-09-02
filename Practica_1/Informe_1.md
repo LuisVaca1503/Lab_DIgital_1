@@ -6,7 +6,7 @@
 <!-- ![image](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/ced8ee8ebfb7c2852670ae4b9f281251126026be/Mint.png)-->
 
 
-Actualmente hay una cantidad extensa de sistemas operativos, que trabajan en diferentes entornos que permiten el uso de estas herramientas como interfaces para el usuario para que se pueda comunicar con el sistema, sin embargo estas distribuciones tienen una índole de acceso libre o privado, como es el caso de Windows pues a pesar de que corre en la mayoría de dispositivos portátiles de 32 y 64 bits, requiere de una licencia puesto que su uso es controlado por Microsoft. Hay una línea de sistemas operativos que ha sido clave para varios aparatos electrónico tal es el caso de GNU/Linux como Android usan el kernel Linux como base software, porque es de acceso libre, no es correcto decir que linux es solamente un sistema operativo, ya que hay varias versiones si es que se le puede llamar así, ya que cada versión que sacan por lo general se basa en un versión completamente distinta recogiendo cosas importantes de esa variante para mejorarla, y que logré adecuarse a los gustos o necesidades del usuario, sea por su diseño, poco consumo de recurso, o por la característica de que hay ciertos programas que corren solo en linux, siendo una ventaja considerable para ciertos tipos de ambiente.
+Actualmente, hay una cantidad extensa de sistemas operativos, que trabajan en diferentes entornos que permiten el uso de estas herramientas como interfaces para el usuario para que se pueda comunicar con el sistema; sin embargo, estas distribuciones tienen una índole de acceso libre o privado, como es el caso de Windows, pues a pesar de que corre en la mayoría de dispositivos portátiles de 32 y 64 bits, requiere de una licencia, puesto que su uso es controlado por Microsoft. Hay una línea de sistemas operativos que ha sido clave para varios aparatos electrónico tal es el caso de GNU/Linux como Android usan el kernel Linux como base software, porque es de acceso libre, no es correcto decir que Linux es solamente un sistema operativo, ya que hay varias versiones si es que se le puede llamar así, puesto que cada versión que sacan por lo general se basa en una versión completamente distinta recogiendo cosas importantes de esa variante para mejorarla, y que logré adecuarse a los gustos o necesidades del usuario, sea por su diseño, poco consumo de recurso, o por la característica de que hay ciertos programas que corren solo en Linux, siendo una ventaja considerable para ciertos tipos de ambiente.
 
 <p align="center">
     <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/ced8ee8ebfb7c2852670ae4b9f281251126026be/Mint.png" alt="Logo Linux Mint" width="320" height="300">
@@ -296,9 +296,11 @@ Posterior a el comando, debe autorizarse o no la instalacion, mediante el comand
 
 
 ## Conclusiones
-* Mediante el proceso de maquina virtual puede concluirse que se tiene un control mayor  en el proceso de instalación, pues se puede limitar las asignaciones de hardware que puede usar este ordenador asi mismo como los recursos que consume.
-* Virtual Box sufre de algunas errores que pueden afectar la experiencia de usuario como la latencia para realizar acciones como escribie, ejecutar comandos en la terminal entre otras cosas
-* 
+* Mediante el proceso de máquina virtual puede concluirse que se tiene un control mayor  en el proceso de instalación, pues se puede limitar las asignaciones de hardware que puede usar este ordenador, así mismo como los recursos que consume.
+* Virtual Box sufre de algunos errores que pueden afectar la experiencia del usuario, como la latencia para realizar acciones como escribir, ejecutar comandos en la terminal, entre otras cosas
+* El procedimiento por partición de disco puede ser algo complicado en la parte inicial, especialmente teniendo en cuenta la cantidad de memoria que se desea asignar al igual que el nombre de la misma partición, a veces es confuso, pero el resto de proceso es amigable con el usuario.
+* Las ventajas de la partición es que se permite el acceso a los periféricos del dispositivo sin necesidad de configuraciones mayores, lo cual permite navegar en el sistema operativo de manera práctica. Las desventajas giran en torno al hecho de que no se puede usar Windows y Linux conjuntamente; esto ya será algo a tener en cuenta por parte del usuario.
+* También notamos que en la partición se tienen los mismos problemas de latencia a la hora de hacer distintos gestos. Por dar ejemplos de casos: la demora en detectar un cambio entre mayúscula y minúscula y la no detección del movimiento en el touchpad para el caso de un computador portátil.
 
 ## Recomendaciones 
 * Problemas con VB:
