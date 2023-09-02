@@ -289,6 +289,8 @@ Posterior a el comando, debe autorizarse o no la instalacion, mediante el comand
 
 ## Conclusiones
 * Mediante el proceso de maquina virtual puede concluirse que se tiene un control mayor  en el proceso de instalación, pues se puede limitar las asignaciones de hardware que puede usar este ordenador asi mismo como los recursos que consume.
+* Virtual Box sufre de algunas errores que pueden afectar la experiencia de usuario como la latencia para realizar acciones como escribie, ejecutar comandos en la terminal entre otras cosas
+* 
 
 ## Recomendaciones 
 * Problemas con VB:
