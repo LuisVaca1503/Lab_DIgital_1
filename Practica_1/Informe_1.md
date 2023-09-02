@@ -90,7 +90,7 @@ Solo debemos presionar Enter a la primera opción, siendo el nombre del SO monta
 
 Una vez en la interfax de Mint, nos aparecera en la esquina superior izquierda, ***Install Linux Mint***.
 
-![image](https://github.com/LuisVaca1503/Lab_DIgital_1/assets/92941277/e5fd3356-049c-4d53-bd4c-82747972395c)
+![image](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/bc4ecd5d5670eccd372fbbbfba2621312fc5ee97/ISo%20install.png)
 
 La instalación es netamente personal y a preferencia de cada usuario, aunque el idioma es importante dejarlo en inglés ya que la instalación de herramientas dentro de Linux Mint se utilizaran comandos en inglés en la consola, quitando eso la región del sistema, el nombre de usuario y contraseña si asi se desea es a elección personal.
 
