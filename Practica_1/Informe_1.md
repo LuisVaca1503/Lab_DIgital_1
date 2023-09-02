@@ -275,6 +275,8 @@ Por ultimo dentro de la consola ponemos este comando, para ejecutar el programa 
 $ java -jar Digital.jar 
 ```
 
+![imagen](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/c87b2eeb12bb415cb37128b90aad964cacba3910/App.png)
+
 ## Resultados
 
 **GraphViz** En la siguiente imagen se muestra, la instalación del paquete GraphViz mediante la terminal de comandos, siguiendo las instrucciones previamente mostradas: 
