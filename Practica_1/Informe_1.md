@@ -242,7 +242,14 @@ $ yosys --version # Permite observer la version de Yosys instalada
 $ gtkwave --version # Permite observer la version de gtkwave instalada
 $ dot -V # Permite observer la version de Graphviz instalada
 ```
+**Digital**
 
+
+Digital es una aplicación que nos permite insertar compuertas lógicas, construir una secuencia de estas a traves de tablas de verdad y ejecutar diferentes simulaciones siendo vital, para el curso de electrónica digital.
+
+Antes de detallarnos en la descarga y la instalación debemos ir a la consola de linux y asegurarnos de tener java y los paquetes necesarios para la ejecución de este programa.
+
+Para hacerlo
 ## Resultados
 
 **GraphViz** En la siguiente imagen se muestra, la instalación del paquete GraphViz mediante la terminal de comandos, siguiendo las instrucciones previamente mostradas: 
@@ -261,26 +268,26 @@ Posterior a el comando, debe autorizarse o no la instalacion, mediante el comand
 * Pantalla Completa:
 La primera vez que se abre el SO Linux, por lo general la escala de Pantalla no se visualiza correctamente para solucionar esto es tan simple como entrar a General / Pantalla y cambiar el controlador de vídeo a VBoxSVGA:
 
-![image](https://github.com/LuisVaca1503/Lab_DIgital_1/assets/92941277/b6a696dd-509e-48f9-820d-d049a33d1fd0)
+![image](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/27e144cf4f576692d00a12303c668c5bf081f5b6/Vboxsga.png)
 
 * Permiso para copiar, pegar y arrastrar entre Linux y Windows.
 
 Es habitual tener este error si no se otorgan los permisos requeridos, el primer paso es ir a Configuración / General y se selecciona la subpestaña avanzado, donde dice Portapapeles compartido y Arrastrar y Soltar, los cambiamos a Bidireccional.
 
-![image](https://github.com/LuisVaca1503/Lab_DIgital_1/assets/92941277/f7fc2cc6-53f0-4c03-8221-37241ec2e151).
+![image](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/27e144cf4f576692d00a12303c668c5bf081f5b6/Bidireccional.png).
 
 Volvemos al inicio del Programa y donde dice Almacenamiento en negrita, IDE secundario maestro, seleccionamos unidad óptica vacía, y clickeamos seleccionar/crear una imagen de disco.
 
-![image](https://github.com/LuisVaca1503/Lab_DIgital_1/assets/92941277/c29bd4c8-b440-4328-9b8e-4d35401aeaa0)
+![image](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/27e144cf4f576692d00a12303c668c5bf081f5b6/Unidad%20optica.png)
 
 Se nos abrira el explorador de archivos donde debemos buscar el iso llamado VBoxGuestAdditions.iso, en la ubicación donde se instalo Virtual Box, aunque por defecto suele estar en C:\Program Files\Oracle\VirtualBox, despues de agregar el iso a la unidad óptica, iniciamos la máquina virtual en el inicio del SO, encontraremos un iso que se abrira.
 
-![image](https://github.com/LuisVaca1503/Lab_DIgital_1/assets/92941277/57285078-5f15-4da8-9747-d9f22a1a98bc)
+![image](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/27e144cf4f576692d00a12303c668c5bf081f5b6/Vbox%20GASpegar.png)
 
 
 Una vez abierto vamos al botón que esta en la esquina superior derecha que dice ejecutar programa:
 
-![image](https://github.com/LuisVaca1503/Lab_DIgital_1/assets/92941277/363d69d3-836c-475f-b26a-c107b76f7dbf)
+![image](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/27e144cf4f576692d00a12303c668c5bf081f5b6/Ejecutar%20Programa.png)
 
 Esto abrira la consola donde se ejecutara el programa, una vez finalizado reiniciamos la máquina virtual, y ya podremos copiar pegar y arrastrar.
 
