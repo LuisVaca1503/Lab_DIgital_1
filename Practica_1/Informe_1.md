@@ -68,7 +68,7 @@ en 1 definimos el nombre de Usuario, del SO, en 2 la ubicación de la carpeta de
 
 * Montaje del ISO:
 
-![image](https://github.com/LuisVaca1503/Lab_DIgital_1/assets/92941277/27059042-1378-48e5-a833-30dbce0ee453)
+![image](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/4fa85fb3cb961a84509900853422430703ad3be3/Montar%20Iso.png)
 
 
 En resumidas cuentas solo consiste, ir a configuración, Almacenamiento en este apartado vamos a Controlador IDE, como está vacío dado que es la primera vez, en la parte derecha de las pestañas donde hay un disco pequeño, seleccionamos y despliega diferentes opciones, como lo que necesitamos montar es el disco o ISO instalado le damos en select disk file, y eso nos llevara al explorador donde debemos buscar el ISO, (normalmente esta en la carpeta de descargas) .
@@ -76,8 +76,6 @@ En resumidas cuentas solo consiste, ir a configuración, Almacenamiento en este 
 * Ejecución de Linux Mint:
 
 Por último solo nos queda dirigirnos a la casilla de Linux Mint en Virtual Box, e iniciar la máquina virtual
-
-![image](https://github.com/LuisVaca1503/Lab_DIgital_1/assets/92941277/b38df33b-2f23-4ee2-9826-9cea0be3a6fd)
 
 
 * Configuración del SO:
