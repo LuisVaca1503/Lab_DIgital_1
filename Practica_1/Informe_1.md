@@ -6,7 +6,7 @@
 <!-- ![image](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/ced8ee8ebfb7c2852670ae4b9f281251126026be/Mint.png)-->
 
 
-Actualmente, hay una cantidad extensa de sistemas operativos, que trabajan en diferentes entornos que permiten el uso de estas herramientas como interfaces para el usuario para que se pueda comunicar con el sistema; sin embargo, estas distribuciones tienen una índole de acceso libre o privado, como es el caso de Windows, pues a pesar de que corre en la mayoría de dispositivos portátiles de 32 y 64 bits, requiere de una licencia, puesto que su uso es controlado por Microsoft. Hay una línea de sistemas operativos que ha sido clave para varios aparatos electrónico tal es el caso de GNU/Linux como Android usan el kernel Linux como base software, porque es de acceso libre, no es correcto decir que Linux es solamente un sistema operativo, ya que hay varias versiones si es que se le puede llamar así, puesto que cada versión que sacan por lo general se basa en una versión completamente distinta recogiendo cosas importantes de esa variante para mejorarla, y que logré adecuarse a los gustos o necesidades del usuario, sea por su diseño, poco consumo de recurso, o por la característica de que hay ciertos programas que corren solo en Linux, siendo una ventaja considerable para ciertos tipos de ambiente.
+Actualmente, hay una cantidad extensa de sistemas operativos, que trabajan en diferentes entornos que permiten el uso de estas herramientas como interfaces para el usuario para que se pueda comunicar con el sistema; sin embargo, estas distribuciones tienen una índole de acceso libre o privado, como es el caso de Windows, pues a pesar de que corre en la mayoría de dispositivos portátiles de 32 y 64 bits, requiere de una licencia debido a que su uso es controlado por Microsoft. Hay una línea de sistemas operativos que han sido clave para varios aparatos electrónicos, tales son los casos de GNU/Linux y Android que usan el kernel Linux como base software. Debido a su acceso libre, no es correcto decir que Linux es solamente un sistema operativo, ya que hay varias versiones (si es que se le puede llamar así) y cada una, por lo general, es completamente distinta. Por otro lado, cada versión recoge cosas importantes de otras variantes o versiones con el fin de mejorar y adecuar la versión a los gustos o necesidades del usuario, sea por su diseño, poco consumo de recurso o por la característica de que hay ciertos programas que corren solo en Linux, siendo una ventaja considerable para ciertos tipos de ambiente.
 
 <p align="center">
     <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/ced8ee8ebfb7c2852670ae4b9f281251126026be/Mint.png" alt="Logo Linux Mint" width="320" height="300">
@@ -24,20 +24,20 @@ Actualmente, hay una cantidad extensa de sistemas operativos, que trabajan en di
 
 
 ## Metodología
-Antes de entrar en detalle con los diferentes pasos, es necesario aclarar que la instalación de Linux aplica siempre para diferentes versiones o tipos de este mismo, no hay un único asi que antes de avanzar, es necesario tener en cuenta ¿Qué Linux es de interes para el usuario especifico? instalar el ISO y montarlo,pero... ¿Qué es un iso?.
-Es un formato de archivo digital que replica un CD, DVD o BD físico. La extensión de archivo ISO no solo almacena archivos y carpetas, sino que aloja además toda la información vital de sistema de archivos acerca de la estructura del disco, casi como un programa.
-La ultima aclaración es que la instalación de **Linux Mint** ( el de interes en esta guía) puede hacerse de dos maneras, por Maquina Virtual o por partición de disco a traves de la BIOS con una USB, ambos metodos seran descritos como Metodo MV, ó Metodo BIOS.
+Antes de entrar en detalle con los diferentes pasos, es necesario aclarar que la instalación de Linux aplica siempre para diferentes versiones o tipos de este mismo. Como no hay un caso único,  es necesario tener en cuenta antes de avanzar ¿Qué Linux es de interés para el usuario específico? Instalar el ISO y montarlo, pero... ¿Qué es un ISO?.
+Es un formato de archivo digital que replica un CD, DVD o BD físico. La extensión de archivo ISO no solo almacena archivos y carpetas, sino que además toda la información vital de sistema de archivos acerca de la estructura del disco, casi como un programa.
+La última aclaración es que la instalación de **Linux Mint** (el de interés en esta guía) puede hacerse de dos maneras, por Máquina Virtual o por partición de disco a través de la BIOS con una USB. Ambos métodos serán descritos como Método MV, o Método BIOS.
 
 ## Metodo MV:
 
 ### Herramientas
-* Lo primero es establecer las herramientas necesarias para la instalación y el montaje de Linux Mint, solo vamos a requerir de 2 antes de entrar en el SO, Virtual Box e ISO de Linux Mint.
+* Lo primero es establecer las herramientas necesarias para la instalación y el montaje de Linux Mint. Solo vamos a requerir de 2 antes de entrar en el SO, Virtual Box e ISO de Linux Mint.
 * Links: [Página de Virtual Box](https://www.virtualbox.org/),[Linux Mint](https://linuxmint.com/)
 * Virtual Box:
 Bajando un poco nos encontraremos con el bóton de descarga
 ![image](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/58c6760fbabee7569baec64db239092e03b36656/VB1.png)
 
-solo lo clickeamos y nos encontraremos con los diferentes versiones de SO para instalarlo, escogemos el que tengamos:
+Solo lo clickeamos y nos encontraremos con los diferentes versiones de SO para instalarlo, escogemos el que tengamos:
 
 ![image](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/9125e6fdcc4e8ea13a5c88e060d737b41d2b5c44/Opciones%20Instalaci%C3%B3n.png)
 
@@ -47,14 +47,14 @@ Ya teniendo el archivo descargado simplemente lo ejecutamos, y le damos Next a t
 
 * Linux Mint:
 
-La descarga del ISO, solo consiste en entrar a la pagina y darle a descargar, sin embargo  esta nos llevara a una pestaña donde habra 3 versiones diferentes, para resumir, cada una consume mas o menos recursos, dependiendo del nivel de diseño y detalle que tenga cada uno en la interfaz de usuario, para este caso escogemos la que sea acorde a nuestro sistema, de bajos (XFCE Edition) , medios (Mate Edition) o altos requisitos(Cinammon Edition), una vez descargado la versión de preferencia, el formato dado sera ISO.
+La descarga del ISO, solo consiste en entrar a la página y darle a descargar; sin embargo,  esta nos llevará a una pestaña donde habrá 3 versiones diferentes. Para resumir, cada una consume más o menos recursos, dependiendo del nivel de diseño y detalle que tenga cada uno en la interfaz de usuario; para este caso escogemos la que sea acorde a nuestro sistema, de bajos (XFCE Edition), medios (Mate Edition) o altos requisitos (Cinammon Edition), una vez descargado la versión de preferencia, el formato dado será ISO.
 
 
 ### Desarrollo
 
 Ejecución Virtual Box:
 
-Ejecutamos el el programa y nos llevara a esta interfaz:
+Ejecutamos el programa y nos llevará a esta interfaz:
 
 ![image](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/0730f2dd004bfaf724b826f23b3214c418b8d160/Interfaz%20VB.png)
 
@@ -62,7 +62,7 @@ Agregamos una maquina virtual, y configuramos los parametros segun nuestro prefe
 
 ![image](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/e6fa6c42c6b15205c408de0c48eb9f501b5d939c/deded.png)
 
-en 1 definimos el nombre de Usuario, del SO, en 2 la ubicación de la carpeta de la maquina ( normalmente predefinido en la instalación de Virtual Box), 3 como dice la casilla nombre del SO invitado, 4 la memoria RAM asignada, 5 números de núcleos del procesador a asignar, y 6 el tamaño del disco que usara el SO.
+En 1 definimos el nombre de Usuario, del SO, en 2 la ubicación de la carpeta de la máquina ( normalmente predefinido en la instalación de Virtual Box), 3 como dice la casilla nombre del SO invitado, 4 la memoria RAM asignada, 5 números de núcleos del procesador a asignar, y 6 el tamaño del disco que usara el SO.
 
 
 
@@ -71,7 +71,7 @@ en 1 definimos el nombre de Usuario, del SO, en 2 la ubicación de la carpeta de
 ![image](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/4fa85fb3cb961a84509900853422430703ad3be3/Montar%20Iso.png)
 
 
-En resumidas cuentas solo consiste, ir a configuración, Almacenamiento en este apartado vamos a Controlador IDE, como está vacío dado que es la primera vez, en la parte derecha de las pestañas donde hay un disco pequeño, seleccionamos y despliega diferentes opciones, como lo que necesitamos montar es el disco o ISO instalado le damos en select disk file, y eso nos llevara al explorador donde debemos buscar el ISO, (normalmente esta en la carpeta de descargas) .
+En resumidas cuentas solo consiste, ir a configuración, Almacenamiento, en este apartado vamos a Controlador IDE, como está vacío dado que es la primera vez, en la parte derecha de las pestañas donde hay un disco pequeño, seleccionamos y despliega diferentes opciones, como lo que necesitamos montar es el disco o ISO instalado le damos en select disk file, y eso nos llevara al explorador donde debemos buscar el ISO, (normalmente está en la carpeta de descargas).
 
 * Ejecución de Linux Mint:
 
@@ -80,19 +80,17 @@ Por último solo nos queda dirigirnos a la casilla de Linux Mint en Virtual Box,
 
 * Configuración del SO:
 
-El inicio del SO, comienza con una subpestaña, un arranque parecido al de windows antes de llegar a la BIOS, y despues de un tiempo nos aparece estas opciones:
+El inicio del SO comienza con una subpestaña, un arranque parecido al de windows antes de llegar a la BIOS, y despues de un tiempo nos aparece estas opciones:
 
 ![image](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/2349f9e221e1331b1074c98d41b756307d287489/Montar%20Bios.png)
 
 Solo debemos presionar Enter a la primera opción, siendo el nombre del SO montado en Linux.
 
-
-
 Una vez en la interfax de Mint, nos aparecera en la esquina superior izquierda, ***Install Linux Mint***.
 
 ![image](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/bc4ecd5d5670eccd372fbbbfba2621312fc5ee97/ISo%20install.png)
 
-La instalación es netamente personal y a preferencia de cada usuario, aunque el idioma es importante dejarlo en inglés ya que la instalación de herramientas dentro de Linux Mint se utilizaran comandos en inglés en la consola, quitando eso la región del sistema, el nombre de usuario y contraseña si asi se desea es a elección personal.
+La instalación es netamente personal y a preferencia de cada usuario, aunque el idioma es importante dejarlo en inglés ya que la instalación de herramientas dentro de Linux Mint se utilizarán comandos en inglés en la consola, quitando eso la región del sistema, el nombre de usuario y contraseña es a elección personal.
 
 _Consideraciones Importantes_
 
@@ -102,7 +100,7 @@ Hay que marcar la casilla de los codecs multimedia.
 
 ![image](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/899cfebefd24dad61365ec36aede270aec64bbac/Borrar%20disco.png)
 
-No borrara absolutamente ningún archivo del SO principal, solo escala nivel de la máquina virtual.
+No borrará absolutamente ningún archivo del SO principal, solo escala nivel de la máquina virtual.
 
 ## Método Partición
 
@@ -138,8 +136,6 @@ En este caso accedemos en el buscador web a balena.io, luego en productos buscam
 
 Una vez instalado y ejecutado balenaEtcher, vamos a ver un menú como el de a continuación. En la primera parte, escogemos la opción "Flash from file", donde nos dirigirá a la sección de archivos para buscar el archivo de Linux que vamos a instalar eventualmente. Después, en la segunda parte "Select Target" vamos a tener que escoger la memoria que vamos a usar como instalador del sistema operativo. Cabe recordar que la memoria a partir de completar este proceso no podrá ser usado de manera común hasta que formateemos de nuevo la memoria (una vez completada la instalación de Linux, podremos hacer dicho proceso tranquilamente). Escogida la memoria que se va a usar, finalmente terminamos de aceptar todo y esperamos a que el proceso sea completado.
 
-
-
 ### Instalación:
 
 (Nota previa: Consultar el botón que permite acceder a la BIOS del computador donde se va a llevar a cabo la instalación de Linux).
@@ -170,7 +166,7 @@ A continuación se explican de manera detallada que son y su proceso de instalac
 
 **Miniconda:**
 
-Anaconda es una distribución de los lenguajes de programación Python y R para computación científica, tiene como ventaja simplificar la gestión e                implementación de paquetes. Sin embargo, para algunos proyectos, no es necesario todo el conjunto de herramientas que Anaconda proporciona,                      para aquellos casos, existe Miniconda. Esta en comparación con la mencionada previamente, permite instalar de manera manual solo las herramientas                requeridas.
+Anaconda es una distribución de los lenguajes de programación Python y R para computación científica, tiene como ventaja simplificar la gestión e implementación de paquetes. Sin embargo, para algunos proyectos, no es necesario todo el conjunto de herramientas que Anaconda proporciona, para aquellos casos, existe Miniconda. Esta en comparación con la mencionada previamente, permite instalar de manera manual solo las herramientas requeridas.
 
 Para su proceso de instalación: 
 
