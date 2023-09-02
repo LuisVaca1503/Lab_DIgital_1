@@ -3,13 +3,13 @@
 
 ## Introducción
 
-<!-- ![image](Mint.png)-->
+<!-- ![image](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/ced8ee8ebfb7c2852670ae4b9f281251126026be/Mint.png)-->
 
 
 Actualmente hay una cantidad extensa de sistemas operativos, que trabajan en diferentes entornos que permiten el uso de estas herramientas como interfaces para el usuario para que se pueda comunicar con el sistema, sin embargo estas distribuciones tienen una índole de acceso libre o privado, como es el caso de Windows pues a pesar de que corre en la mayoría de dispositivos portátiles de 32 y 64 bits, requiere de una licencia puesto que su uso es controlado por Microsoft. Hay una línea de sistemas operativos que ha sido clave para varios aparatos electrónico tal es el caso de GNU/Linux como Android usan el kernel Linux como base software, porque es de acceso libre, no es correcto decir que linux es solamente un sistema operativo, ya que hay varias versiones si es que se le puede llamar así, ya que cada versión que sacan por lo general se basa en un versión completamente distinta recogiendo cosas importantes de esa variante para mejorarla, y que logré adecuarse a los gustos o necesidades del usuario, sea por su diseño, poco consumo de recurso, o por la característica de que hay ciertos programas que corren solo en linux, siendo una ventaja considerable para ciertos tipos de ambiente.
 
 <p align="center">
-    <img src="Mint.png" alt="Logo Linux Mint" width="320" height="300">
+    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/ced8ee8ebfb7c2852670ae4b9f281251126026be/Mint.png" alt="Logo Linux Mint" width="320" height="300">
 </p>
 
 ## Objetivos
@@ -35,7 +35,7 @@ La ultima aclaración es que la instalación de **Linux Mint** ( el de interes e
 * Links: [Página de Virtual Box](https://www.virtualbox.org/),[Linux Mint](https://linuxmint.com/)
 * Virtual Box:
 Bajando un poco nos encontraremos con el bóton de descarga
-![image](https://github.com/LuisVaca1503/Lab_DIgital_1/assets/92941277/0ccfcb11-6cec-4645-b1ee-0803e9ab82b9)
+![image]()
 
 solo lo clickeamos y nos encontraremos con los diferentes versiones de SO para instalarlo, escogemos el que tengamos:
 
