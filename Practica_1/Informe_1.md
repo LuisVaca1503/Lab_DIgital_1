@@ -56,7 +56,7 @@ Ejecución Virtual Box:
 
 Ejecutamos el el programa y nos llevara a esta interfaz:
 
-![image](https://github.com/LuisVaca1503/Lab_DIgital_1/assets/92941277/7800a6e9-0544-4a54-8598-d7c0bd40a28a)
+![image](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/0730f2dd004bfaf724b826f23b3214c418b8d160/Interfaz%20VB.png)
 
 Agregamos una maquina virtual, y configuramos los parametros segun nuestro preferencia, he aqui el resumen:
 
