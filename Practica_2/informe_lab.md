@@ -1,1 +1,4 @@
-La ides es probar que esto funcione y redactar el lab 2
+# Practica No.2 _Full adder Substractor_
+
+
+## Introducción
