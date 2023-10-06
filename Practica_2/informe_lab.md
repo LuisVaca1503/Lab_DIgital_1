@@ -1,6 +1,19 @@
 # Práctica No. 2 - Sumador - Restador
 
 En esta práctica se lleva a cabo el desarrollo de un sumador - restador de 4 bits. Durante el desarrollo de la práctica, llevaremos a cabo el análisis de distintos componentes que nos van a llevar finalmente a la construcción del sumador - restador.
+## Introducción
+
+Los circuitos lógicos son clave en la lógica combinacional para plantear diferentes esquemas para solucionar diferentes tareas, de acuerdo al número de bloques o funciones el cual este constituido un circuito, en este caso como es el del 4 bit adder substractor, sin embargo como todos los circuitos integrados están constituidos por bloques operacionales en función del módulo para obtener el resultado final, esto con fines para obtener expresiones más reducidas y un control operacional más inteligente.
+
+## Objetivos
+
+Construir los diferentes modulos para el 4 bit adder susbtractor
+Describir el funcionamiento de los diferentes modulos
+Simular el comportamiento general del 4 bit adder substractor
+
+## Marco teorico
+Para comprender un sumador de 4 bits primero hay que remontarse al uso del carry de entrada y la propagación del mismo, para módulos corrientes como es el caso de un medio sumador, este se suma bit a bit sin embargo en la suma siempre hay un factor que es que el acarreo debe llevar o sumar al siguiente bit, para el medio sumador no cumple este requisito asi que el factor de acarreo se soluciona con un full adder. con XOR se calcula la suma entre las 3 entradas, y para el Cout (A AND B) OR ((A XOR B) AND Cin)
+La resta en pocas palabras es una suma, asi que su juego sera en sacar el complemento A2 de de los buses de entrada en el número de bits para la entrada B, ya que el restador correspondiente también analiza para el caso A-B, si A>B y A<B.
 
 ## Digital
 
