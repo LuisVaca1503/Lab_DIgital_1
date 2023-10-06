@@ -49,13 +49,49 @@ Este desbordamiento de datos es básicamente un 1. En la suma binaria este es el
 
 ### Sumador Restador
 
-#### Comparador -  Complemento A1
+Antes de desarrollar este sistema, tenemos que desarrollar varias cosas de manera previa con el fin de generarlo.
 
 #### Complemento A1
 
+Desarrollado a partir de la tabla de verdad, tenemos la primera parte del complemento A2 el cual es hacer el complemento A1 (complemento de cada uno de los bits del dato) del número si el signo del número "Sy" es negativo "1". Si el bit de signo es un 0, el sistema simplemente dejará pasar el mismo número, y si el bit es 1, la salida de los cuatro bits siguientes van a ser el complemento de cada uno. El símbolo denotado como Y en la salida es igual al de la entrada.
+
+<p>
+  <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Practica_2/Imagenes_lab2/Img_Digital/Negador%20A1.png" alt="Complemento A1" width="320">
+</p>
+
 #### Complemento A2
+
+La operación A2 es llevar a cabo el complemento A1 previamente y sumar un 1 binario. Para esto hacemos uso del complemento A1 (marcado como CM) trabajado previamente, junto con un sumador de 4 bits, cuyo primer grupo de entradas "Ax" van a ser puestas a tierra, ya que no requeriremos de su uso. El segundo grupo de entradas será conectada de la manera dispuesta en la Figura. Sy es el símbolo del dato que va a entrar y sabemos que el complemento A2 se lleva a cabo cuando el dato es negativo. Sy va a salir de CM con el mismo valor y entra como Ci al sumador de 4 bits, lo cual permite que se sume el 1 en el sistema. Esto permite completar el complemento A2.
+
+<p>
+  <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Practica_2/Imagenes_lab2/Img_Digital/Complemento%20A2.png" alt="Complemento A2" width="320">
+</p>
 
 #### Operador símbolo
 
-#### Sumador Restador
+Por disposición del sumador-restador, requerimos que el Cin del sumador de 4 bits que se va a usar, este dispuesto a tierra. Para evitar conflictos a la hora de expresar el símbolo, hacemos uso de un circuito adicional, el cual, en su expresión reducida, solamente mostrará el símbolo de la entrada de datos A.
+
+Esto en el sumador-restador mostrará un 1 en dos ocasiones:
+* Cuando A es negativo y B positivo (A<B)
+* Cuando A y B son negativos
+
+<p>
+  <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Practica_2/Imagenes_lab2/Img_Digital/Corrector%20Signo.png" alt="Signo del sumador-restador" width="320">
+</p>
+
+#### Sumador-Restador
+
+Finalmente, tenemos el sumador restador. Para este caso requerimos de 2 bloques del complemento A2, un bloque encargado de mostrar el símbolo del resultado de la operación y un sumador de 4 bits, cuyo Cin va a estar dispuesto a tierra.
+
+Dos entradas de datos (Ax y Bx) van a entrar a los bloques de los complementos A2. Los simbolos de ambos datos van a entrar tanto como a los bloques A2 como al bloque de simbolo "SYC", cuya unica salida mostrará el símbolo de la operación. Las cuatro salidas restantes Zx de los complementos A2 van a entrar a cada grupo de entradas del sumador de 4 bits.
+
+Así tendremos como resultado una salida de 6 bits:
+
+* Cuatro salidas Zx, las cuales están ordenadas del bit más significativo al menos significativo.
+* Una salida CoZ, la cual va a mostrar el desbordamiento de datos.
+* Una salida SyZ la cual indica el signo de la operación, dadas las condiciones explicadas en el operador de símbolo.
+
+<p>
+  <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Practica_2/Imagenes_lab2/Img_Digital/Sumador%20Restador.png" alt="Sumador-restador" width="480">
+</p>
 
