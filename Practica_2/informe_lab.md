@@ -301,3 +301,8 @@ Este bloque une el negador y la suma LSG para entregar el resultado esperado que
 <p>
   <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/8df1d9365b9ceec3dbedd285c85377e747aa4482/Practica_2/Imagenes_lab2/complementoados.png" alt="RTLcomplementoA2" width="500">
 </p>
+Finalmente implementando todos estos bloques mostrados previamente en conjunto se obtiene el siguiente esquematico: 
+<p>
+  <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/8df1d9365b9ceec3dbedd285c85377e747aa4482/Practica_2/Imagenes_lab2/sumrestfourbits.png" alt="RTLsumrestfourbits" width="500">
+</p>
+Al igual que en casos anteriores, este modelo tiene un archivo pruebas a ejecutar por el mismo, citando uno de los ejemplos que se pueden encontrar dentro del archivo adjunto 
