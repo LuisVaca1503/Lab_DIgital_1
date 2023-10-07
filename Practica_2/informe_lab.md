@@ -129,8 +129,39 @@ assign s = a ^ b; // Teniendo presente que ^ = XOR, esta expresión asigna a s e
 assign co = a & b; // Teniendo presente que & = AND, esta expresión asigna a co el valor de a and b
 endmodule
 ```
-Teniendo esto definido, gracias a los programas instalados en la [Practica #1] (https://github.com/LuisVaca1503/Lab_DIgital_1/blob/e6d5fabb3837f5d7595fe88897cd2b7146158951/Practica_1/Informe_1.md) puntualmente Yosys y netlistsvg, es posible general el RTL asociado a este circuito: 
+Teniendo esto definido, gracias a los programas instalados en la [Practica #1](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/e6d5fabb3837f5d7595fe88897cd2b7146158951/Practica_1/Informe_1.md) puntualmente Yosys y netlistsvg, es posible general el RTL asociado a este circuito, el cual se observa como: 
 
  <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Practica_2/Imagenes_lab2/halfadder.png" alt="Sumador-restador" width="480">
 </p>
 
+Al igual que su equivalente creado en el software *Digital* este bloque operacional solamente puede sumar hasta dos en decimal es decir hasta 10 en binario. Para poder desarrollar un bloque que pueda manejar acarreos de entrada y obtener todas las posibles combinaciones con 2 bits es necesario crear un *Sumador Completo*
+
+## Sumador Completo: 
+
+Para el desarrollo de este sumador completo, se requiere una entrada adicional denominada como _Carry in_ la cual se establece como un puente para realizar conexiones en cascada entre varios bloques del mismo tipo y permitir el transporte de acarreos. Ahora bien, para la construcción se requiere de 2 semisumadores para obtener el resultado esperado. Gracias a que el bloque operacional ya fue determinado previamente, puede hacerse uso de la configuración jerarquica que permite establecer iVerilog en el desarrollo de scripts, asi entonces el codigo dado para el sumador completo se observa como: 
+
+```bash
+module fulladder (
+  }
+  input in_b, in_a, in_ci, // Define las entradas A, B y el Acarreo de entrada
+  output out_co, out_s // Define las salidas Acarreo de Salida y Resultado (Sum)
+);
+
+
+// Declaración de señales
+wire s_s1_to_b_s2; // Un cable del s del sumador 1 a la entrada A del sumador2
+wire co_s1_to_or; // Un cable desde co del sumador 1 a la compuerta or
+wire co_s2_to_or; // Un cable desde co del sumador 2 a la compuerta or
+
+// Declaración de submodules
+
+halfadder halfadder1(in_b, in_a, co_s1_to_or, s_s1_to_b_s2); //Se crea un bloque de semisumador y se le proveen los parametros correspondientes.
+halfadder halfadder2(s_s1_to_b_s2, in_ci, co_s2_to_or, out_s);//En este caso las entradas que se le proveen son el resultado
+//de la suma anterior y el carry de entrada
+
+// Descripción del comportamiento
+assign out_co = co_s1_to_or | co_s2_to_or; //Teniendo presente que | = OR, esta expresión asigna a el acarreo de salida el valor de co_s1 or co_s2 //
+
+endmodule
+```
+  
