@@ -301,8 +301,22 @@ Este bloque une el negador y la suma LSG para entregar el resultado esperado que
 <p>
   <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/8df1d9365b9ceec3dbedd285c85377e747aa4482/Practica_2/Imagenes_lab2/complementoados.png" alt="RTLcomplementoA2" width="500">
 </p>
+
 Finalmente implementando todos estos bloques mostrados previamente en conjunto se obtiene el siguiente esquematico: 
 <p>
   <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/8df1d9365b9ceec3dbedd285c85377e747aa4482/Practica_2/Imagenes_lab2/sumrestfourbits.png" alt="RTLsumrestfourbits" width="500">
 </p>
-Al igual que en casos anteriores, este modelo tiene un archivo pruebas a ejecutar por el mismo, citando uno de los ejemplos que se pueden encontrar dentro del archivo adjunto 
+
+Al igual que en casos anteriores, este modelo tiene un archivo pruebas a ejecutar por el mismo, citando uno de los ejemplos que se pueden encontrar dentro del archivo adjunto [Sumador Restador tb](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/d5d49d6819a0af5cfc779dacadfe3989d042c32e/Practica_2/Archivos_lab2/testbenches_verilog/sumrestfourbits_tb.v)
+
+```bash
+// Caso de prueba 1: Suma
+A = 4'b1101; 
+B = 4'b0110;
+sign = 1'b0; // 0 para suma, 1 para resta
+cin = 1'b0;  // Carry inicial (puede ser 0 o 1)
+#10;
+$display("A = %b, B = %b, Signo = %b, Suma = %b, Acarreo = %b", A, B, sign, sumt, ct);
+```
+Este caso puntual prueba la suma, donde no se niega el segundo numero y el procedimiento se realiza de sin necesidad de recurrir al complemento A2, si se quieren observar los otros casos de estudio, la manera de definir el modulo y sus parametros de funcionamiento, revise el archivo adjunto. 
+
