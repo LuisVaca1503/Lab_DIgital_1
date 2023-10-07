@@ -115,11 +115,22 @@ se busca que gracias a diferentes bloques operacionales pequeños se logre un tr
 
 ### Semi-Sumador o Half Adder:
 
-Tras desarrollar de manera manual procesos de análisis de tablas de verdad, creación de mapas de Karnaugh y obtención de expresiones se determina que para realizar un medio sumador y obtener su respectivo Carry de salida y resultado (que en este caso se denomina como Sum) es necesario la implementar una compuerta *AND* y *OR* respectivamente, así entonces siguiendo la sintaxis de Verilog se establece el siguiente código:  
+Tras desarrollar de manera manual procesos de análisis de tablas de verdad, creación de mapas de Karnaugh y obtención de expresiones se determina que para realizar un medio sumador y obtener su respectivo Carry de salida y resultado (que en este caso se denomina como Sum) es necesario la implementar una compuerta *AND* y *XOR* respectivamente, así entonces siguiendo la sintaxis de Verilog se establece el siguiente código:  
 
 ```bash
-cd Downloads # Este comando redirige al usuario a la carpeta en cuestión 
-bash Miniconda3-Linux-64-bit.sh # Este comando permite simplificar la ejecución de comandos contenidos en el archivo instalado
-#Posteriormente se deben seguir la instrucciones alli dadas y despues reiniciar la consola.
+// Declaración del módulo
+module halfadder (
+  input b, a, // Bits de entrada para realizar la operación
+  output co, s // Carry de Salida y Resultado de la Suma
+);
+
+// Descripción del comportamiento
+assign s = a ^ b; // Teniendo presente que ^ = XOR, esta expresión asigna a s el valor de a xor b
+assign co = a & b; // Teniendo presente que & = AND, esta expresión asigna a co el valor de a and b
+endmodule
 ```
-  
+Teniendo esto definido, gracias a los programas instalados en la [Practica #1] (https://github.com/LuisVaca1503/Lab_DIgital_1/blob/e6d5fabb3837f5d7595fe88897cd2b7146158951/Practica_1/Informe_1.md) puntualmente Yosys y netlistsvg, es posible general el RTL asociado a este circuito: 
+
+ <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Practica_2/Imagenes_lab2/halfadder.png" alt="Sumador-restador" width="480">
+</p>
+
