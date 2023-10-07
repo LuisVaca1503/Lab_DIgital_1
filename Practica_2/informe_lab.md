@@ -204,3 +204,6 @@ fulladder fulladder4 (a[3],b[3],C_out[2],C_out[3],Sum_total[3]);
 endmodule 
 ```
 Para entender de manera grafica como se ejecuta este script, observe el siguiente RTL:
+<p>
+  <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Practica_2/Imagenes_lab2/fourbitsadder.png" alt="RTLsumador4bits" width="700">
+</p>
