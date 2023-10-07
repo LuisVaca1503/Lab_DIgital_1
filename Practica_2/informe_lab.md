@@ -238,4 +238,16 @@ En la prueba mostrada previamente, se realiza un pequeño apartado en el que se 
 A = 1101, B = 0110, Carry in = 0, Carry out = 1, Suma = 0011
 Prueba PASADA: C_out y Sum_total son correctos.
 ```
-Este mensaje sirve como confirmación de que la ejecución  del sumador de 4 bits es correcta,
+Este mensaje sirve como confirmación de que la ejecución  del sumador de 4 bits es correcta, en el archivo [Test bench Sumador 4 bits](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/e245e9296958f4440cdc319fbc6b1a122b08a8a3/Practica_2/Archivos_lab2/testbenches_verilog/fourbitsadder_tb.v), existen mas casos de prueba junto a sus respuestas esperadas respectivas. 
+
+## Sumador-Restador 4 bits
+
+Finalmente se presenta el módulo que abarca todo lo previamente trabajado, y consiste en el módulo sumador restador el cual permite realizar ya sea suma o resta de 2 números binarios de 4 bits según se indique por parte del usuario. Para realizar el proceso de suma no existe inconveniente pues gracias a lo mostrado previamente el módulo cumple esta condición, no obstante para realizar la resta de 2 números, es necesario implementar el complemento A2 a uno de estos números. Dado que este proceso se conforma de 2 pasos:
+- Negar el número original (Complemento a 1)
+- Sumarle 1 a el bit menos significativo del complemento A1
+
+
+Así entonces se optó por dividir estos pasos en 2 submódulos que se usan en el bloque dedicado al complemento A2.
+
+### Negador o Complemento A1
+Como se menciono previamente, este bloque operacional lo que busca es negar el número original
