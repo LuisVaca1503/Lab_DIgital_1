@@ -184,6 +184,7 @@ En el ejemplo mostrado previamente simplemente se le indica el valor que adquier
 
 ## Sumador de 4 bits: 
 Nuevamente haciendo uso de los bloques creados previamente se busca la creación de uno que cumpla una tarea más compleja, para este caso se requiere la suma de un número binario compuesto de 4 dígitos o bits, en ese orden de ideas, se puede recurrir a el uso de sumadores completos, precisamente 4 de ellos, donde a cada uno de estos se le es asignado un bit perteneciente a cada entrada (A0,B0 para el primero, A1,B1 para el segundo y así sucesivamente), no obstante al igual que la suma en números decimales, si existe un número que acarrear proveniente de los dígitos menos significativos este debe considerarse en la suma de los bits siguientes. Planteando esta lógica y describiendola en código verilog se tiene:
+
 ```bash
 module fourbitsadder (
 	input wire [3:0]a, // Define la entrada A como un cable de 4 bits o 4 posiciones
@@ -205,5 +206,36 @@ endmodule
 ```
 Para entender de manera grafica como se ejecuta este script, observe el siguiente RTL:
 <p>
-  <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Practica_2/Imagenes_lab2/fourbitsadder.png" alt="RTLsumador4bits" width="700">
+  <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/8df1d9365b9ceec3dbedd285c85377e747aa4482/Practica_2/Imagenes_lab2/fourbitsadder.png" alt="RTLsumador4bits" width="700">
 </p>
+
+Al igual que en el caso anterior para verificar el funcionamiento del script creado, este se somete bajo una serie de pruebas establecidas en un test bench propio, un ejemplo de una prueba realizada a este se muestra a continuación: 
+```bash
+  initial begin
+    // Inicializa las señales de entrada
+    a = 4'b1101; // Define la entrada A como la combinación de Bits 1101
+    b = 4'b0110; // Define la entrada B como la combinación de Bits 0110
+    Cin = 1'b0;  // Define el acarreo de entrada para el Sumador Completo.
+
+    // Espera un ciclo para que se actualicen las salidas
+    #1;
+
+    // Verificar las salidas
+    if (C_out === 4'b0001 && Sum_total === 4'b0011) begin
+	  $display("A = %b, B = %b, Carry in = %b, Carry out = %b, Suma = %b", a, b, Cin, C_out, Sum_total);
+      $display("Prueba PASADA: C_out y Sum_total son correctos.");
+    end else begin
+      $display("A = %b, B = %b, Carry in = %b, Carry out = %b, Suma = %b", a, b, Cin, C_out, Sum_total);
+      $display("Prueba FALLIDA: C_out o Sum_total no son correctos.");
+    end
+
+    $finish;
+  end
+```
+En la prueba mostrada previamente, se realiza un pequeño apartado en el que se muestra en consola a el usuario si la respuesta generada por el script coincide con la respuesta esperada, caso contrario esta mostrara un mensaje de advertencia. A fin de mostrar resultados, tras ejecutar este script, en consola se obtiene el siguiente mensaje: 
+
+```bash
+A = 1101, B = 0110, Carry in = 0, Carry out = 1, Suma = 0011
+Prueba PASADA: C_out y Sum_total son correctos.
+```
+Este mensaje sirve como confirmación de que la ejecución  del sumador de 4 bits es correcta,
