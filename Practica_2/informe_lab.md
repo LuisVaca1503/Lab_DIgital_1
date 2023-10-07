@@ -131,7 +131,7 @@ endmodule
 ```
 Teniendo esto definido, gracias a los programas instalados en la [Practica #1](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/e6d5fabb3837f5d7595fe88897cd2b7146158951/Practica_1/Informe_1.md) puntualmente Yosys y netlistsvg, es posible general el RTL asociado a este circuito, el cual se observa como: 
 
- <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Practica_2/Imagenes_lab2/halfadder.png" alt="Sumador-restador" width="480">
+ <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Practica_2/Imagenes_lab2/halfadder.png" alt="RTLSemisumador" width="480">
 </p>
 
 Al igual que su equivalente creado en el software *Digital* este bloque operacional solamente puede sumar hasta dos en decimal es decir hasta 10 en binario. Para poder desarrollar un bloque que pueda manejar acarreos de entrada y obtener todas las posibles combinaciones con 2 bits es necesario crear un *Sumador Completo*
@@ -164,4 +164,11 @@ assign out_co = co_s1_to_or | co_s2_to_or; //Teniendo presente que | = OR, esta 
 
 endmodule
 ```
-  
+Haciendo uso nuevamente de Yosys y netlistsvg se obtiene que el RTL asociado a este script se observa como:
+
+<p>
+  <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Practica_2/Imagenes_lab2/fulladder.png" alt="RTLsumadorcompleto" width="480">
+</p>
+
+Ahora bien, dado que aqui no se obtiene una respuesta visual directa para evidenciar el correcto funcionamiento del script, se es necesario un archivo denominado como *tb* debido a sus siglas en ingles *Test Bench* en el cual se establecen una serie de casos de prueba para obtener la respuesta del script creado. Para este caso puntual y evidenciar si el sumador completo da la respuesta esperada se le establece lo siguiente en este archivo: 
+
