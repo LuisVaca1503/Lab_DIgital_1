@@ -134,7 +134,7 @@ Teniendo esto definido, gracias a los programas instalados en la [Practica #1](h
  <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Practica_2/Imagenes_lab2/halfadder.png" alt="RTLSemisumador" width="480">
 </p>
 
-Al igual que su equivalente creado en el software *Digital* este bloque operacional solamente puede sumar hasta dos en decimal es decir hasta 10 en binario. Para poder desarrollar un bloque que pueda manejar acarreos de entrada y obtener todas las posibles combinaciones con 2 bits es necesario crear un *Sumador Completo*
+Al igual que su equivalente creado en el software *Digital* este bloque operacional solamente puede sumar hasta dos en decimal es decir hasta 10 en binario. Para poder desarrollar un bloque que pueda manejar acarreos de entrada y obtener todas las posibles combinaciones con 2 bits es necesario crear un **Sumador Completo**
 
 ## Sumador Completo: 
 
@@ -172,7 +172,7 @@ Haciendo uso nuevamente de Yosys y netlistsvg se obtiene que el RTL asociado a e
 
 Como se observa en la imagen anterior, existen los 2 modulos de semi sumador creados en el codigo, asi mismo como los cables que unen ambos modulos dando como resultado un modulo operacional aun mas completo. 
 
-Ahora bien, dado que aqui no se obtiene una respuesta visual directa para evidenciar el correcto funcionamiento del script, se es necesario un archivo denominado como *tb* debido a sus siglas en ingles *Test Bench* en el cual se establecen una serie de casos de prueba para obtener la respuesta del script creado. Dentro de este script, se deben crear modulos u bloques a los cuales se les ha de realizar la pruebas asi mismo como proporcionarle los parametros de entrada requeridos por este para operar. Así entonces, para este caso puntual y evidenciar si el sumador completo da la respuesta esperada se establecen casos de pruebas como mostrados en el ejemplo a continuación:
+Ahora bien, dado que aqui no se obtiene una respuesta visual directa para evidenciar el correcto funcionamiento del script, se es necesario un archivo denominado como *tb* debido a sus siglas en ingles **Test Bench** en el cual se establecen una serie de casos de prueba para obtener la respuesta del script creado. Dentro de este script, se deben crear modulos u bloques a los cuales se les ha de realizar la pruebas asi mismo como proporcionarle los parametros de entrada requeridos por este para operar. Así entonces, para este caso puntual y evidenciar si el sumador completo da la respuesta esperada se establecen casos de pruebas como mostrados en el ejemplo a continuación:
 
 ```bash
 // Prueba 1
@@ -180,4 +180,27 @@ Ahora bien, dado que aqui no se obtiene una respuesta visual directa para eviden
     #10;
     $display("  A = 0, B = 1  = 1 |   %b %b", out_co, out_s);
 ```
-En el ejemplo mostrado previamente simplemente se le indica el valor que adquiere cada señal de entrada y gracias el comando $display, al terminar de ejecutar este caso de prueba, en la consola se muestra el resultado de la suma, asi mismo como el carry de salida. Dentro de cada archivo tb pueden crearse cuantos casos de prueba se requiera, en el archivo adjunto Fulladder_tb es posible observar de manera mas detallada la asignación del modulo, parametros de entrada asi como un ejemplo de como haciendo uso del ciclo _for_ se puede generar todas las combinaciones de entrada posibles. 
+En el ejemplo mostrado previamente simplemente se le indica el valor que adquiere cada señal de entrada y gracias el comando $display, al terminar de ejecutar este caso de prueba, en la consola se muestra el resultado de la suma, asi mismo como el carry de salida. Dentro de cada archivo tb pueden crearse cuantos casos de prueba se requiera, en el archivo adjunto [Fulladder_t](https://github.com/LuisVaca1503/Lab_DIgital_1/blob/402c82ed56d852987bdb63724738e6a8dd4ba53a/Practica_2/Archivos_lab2/testbenches_verilog/fulladder_tb.v) es posible observar de manera mas detallada la asignación del modulo, parametros de entrada asi como un ejemplo de como haciendo uso del ciclo _for_ se puede generar todas las combinaciones de entrada posibles. 
+
+## Sumador de 4 bits: 
+Nuevamente haciendo uso de los bloques creados previamente se busca la creación de uno que cumpla una tarea más compleja, para este caso se requiere la suma de un número binario compuesto de 4 dígitos o bits, en ese orden de ideas, se puede recurrir a el uso de sumadores completos, precisamente 4 de ellos, donde a cada uno de estos se le es asignado un bit perteneciente a cada entrada (A0,B0 para el primero, A1,B1 para el segundo y así sucesivamente), no obstante al igual que la suma en números decimales, si existe un número que acarrear proveniente de los dígitos menos significativos este debe considerarse en la suma de los bits siguientes. Planteando esta lógica y describiendola en código verilog se tiene:
+```bash
+module fourbitsadder (
+	input wire [3:0]a, // Define la entrada A como un cable de 4 bits o 4 posiciones
+	input wire[3:0]b, // Define la entrada A como un cable de 4 bits o 4 posiciones
+	input wire Cin, // Define el carry de entrada Cin como un cable de un solo bit
+	output wire cout, //  Define el carry de salida Cout como un cable de un solo bit
+	output wire [3:0] Sum_total  // Define el resultado de la suma como un cable de 4 bits
+);
+
+wire [3:0] C_out;
+assign cout = C_out[3];
+
+fulladder fulladder1 (a[0],b[0],Cin, C_out[0],Sum_total[0]); // Es el primer sumador completo que se ejecuta, pasado su Cout como Cin de la siguiente etapa
+fulladder fulladder2 (a[1],b[1],C_out[0],C_out[1],Sum_total[1]);
+fulladder fulladder3 (a[2],b[2],C_out[1],C_out[2],Sum_total[2]);
+fulladder fulladder4 (a[3],b[3],C_out[2],C_out[3],Sum_total[3]);
+
+endmodule 
+```
+Para entender de manera grafica como se ejecuta este script, observe el siguiente RTL:
