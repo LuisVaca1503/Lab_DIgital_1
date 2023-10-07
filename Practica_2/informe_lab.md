@@ -167,8 +167,17 @@ endmodule
 Haciendo uso nuevamente de Yosys y netlistsvg se obtiene que el RTL asociado a este script se observa como:
 
 <p>
-  <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Practica_2/Imagenes_lab2/fulladder.png" alt="RTLsumadorcompleto" width="480">
+  <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Practica_2/Imagenes_lab2/fulladder.png" alt="RTLsumadorcompleto" width="580">
 </p>
 
-Ahora bien, dado que aqui no se obtiene una respuesta visual directa para evidenciar el correcto funcionamiento del script, se es necesario un archivo denominado como *tb* debido a sus siglas en ingles *Test Bench* en el cual se establecen una serie de casos de prueba para obtener la respuesta del script creado. Para este caso puntual y evidenciar si el sumador completo da la respuesta esperada se le establece lo siguiente en este archivo: 
+Como se observa en la imagen anterior, existen los 2 modulos de semi sumador creados en el codigo, asi mismo como los cables que unen ambos modulos dando como resultado un modulo operacional aun mas completo. 
 
+Ahora bien, dado que aqui no se obtiene una respuesta visual directa para evidenciar el correcto funcionamiento del script, se es necesario un archivo denominado como *tb* debido a sus siglas en ingles *Test Bench* en el cual se establecen una serie de casos de prueba para obtener la respuesta del script creado. Dentro de este script, se deben crear modulos u bloques a los cuales se les ha de realizar la pruebas asi mismo como proporcionarle los parametros de entrada requeridos por este para operar. Así entonces, para este caso puntual y evidenciar si el sumador completo da la respuesta esperada se establecen casos de pruebas como mostrados en el ejemplo a continuación:
+
+```bash
+// Prueba 1
+    in_b = 1; in_a = 0; in_ci = 1;
+    #10;
+    $display("  A = 0, B = 1  = 1 |   %b %b", out_co, out_s);
+```
+En el ejemplo mostrado previamente simplemente se le indica el valor que adquiere cada señal de entrada y gracias el comando $display, al terminar de ejecutar este caso de prueba, en la consola se muestra el resultado de la suma, asi mismo como el carry de salida. Dentro de cada archivo tb pueden crearse cuantos casos de prueba se requiera, en el archivo adjunto Fulladder_tb es posible observar de manera mas detallada la asignación del modulo, parametros de entrada asi como un ejemplo de como haciendo uso del ciclo _for_ se puede generar todas las combinaciones de entrada posibles. 
