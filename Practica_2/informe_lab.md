@@ -272,3 +272,32 @@ Haciendo uso de compuertas lógicas **XOR** es posible negar cada bit que compon
 <p>
   <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/8df1d9365b9ceec3dbedd285c85377e747aa4482/Practica_2/Imagenes_lab2/negadorfourbits.png" alt="RTLnegadorfourbits" width="500">
 </p>
+
+Este bloque toma el número negado generado por el módulo previamente presentado y le suma un 1 en el bit menos significativo, esto para completar la definición del complemento A2. El resultado de este puede darse usando un sumador completo y fijando las entradas del número B como un cero, y añadiendo un 1 en el carry de entrada, o puede usarse 4 semisumadores donde el carry de entrada se toma como el número b de la primera etapa y el carry de salida de esta etapa se toma como la entrada a de la segunda y así sucesivamente. Observando esta lógica aplicada en código verilog
+
+```bash
+module sumaLSG(
+	input wire [3:0]num,
+	input Cin,
+	output [3:0]numout);
+	
+wire [3:0]carrypass;
+
+halfadder halfadder1(Cin,num[0],carrypass[0],numout[0]);
+halfadder halfadder2(carrypass[0],num[1],carrypass[1],numout[1]);
+halfadder halfadder3(carrypass[1],num[2],carrypass[2],numout[2]);
+halfadder halfadder4(carrypass[2],num[3],carrypass[3],numout[3]);
+
+endmodule 
+```
+Observando el RTL asociado: 
+<p>
+  <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/8df1d9365b9ceec3dbedd285c85377e747aa4482/Practica_2/Imagenes_lab2/sumaLSG.png" alt="RTLsumalgs" width="500">
+</p>
+La salida generada por este modulo se entiende como el complemento A2 definitivo. 
+
+## Complemento A2
+Este bloque une el negador y la suma LSG para entregar el resultado esperado que posteriormente se entrega a el sumador de 4 bits:
+<p>
+  <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/8df1d9365b9ceec3dbedd285c85377e747aa4482/Practica_2/Imagenes_lab2/complementoados.png" alt="RTLcomplementoA2" width="500">
+</p>
