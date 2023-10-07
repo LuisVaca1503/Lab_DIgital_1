@@ -108,3 +108,18 @@ Así tendremos como resultado una salida de 6 bits:
   <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Practica_2/Imagenes_lab2/Img_Digital/Sumador%20Restador.png" alt="Sumador-restador" width="480">
 </p>
 
+## Verilog
+
+Otra manera de observar el desarrollo de este sumador-restador es mediante la implementación del codigo *iVerilog*, donde al igual que en el apartado anterior 
+se busca que gracias a diferentes bloques operacionales pequeños se logre un trabajo en conjunto para dar el resultado esperado, asi entonces se tiene que: 
+
+### Semi-Sumador o Half Adder:
+
+Tras desarrollar de manera manual procesos de análisis de tablas de verdad, creación de mapas de Karnaugh y obtención de expresiones se determina que para realizar un medio sumador y obtener su respectivo Carry de salida y resultado (que en este caso se denomina como Sum) es necesario la implementar una compuerta *AND* y *OR* respectivamente, así entonces siguiendo la sintaxis de Verilog se establece el siguiente código:  
+
+```bash
+cd Downloads # Este comando redirige al usuario a la carpeta en cuestión 
+bash Miniconda3-Linux-64-bit.sh # Este comando permite simplificar la ejecución de comandos contenidos en el archivo instalado
+#Posteriormente se deben seguir la instrucciones alli dadas y despues reiniciar la consola.
+```
+  
