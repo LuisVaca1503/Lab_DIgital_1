@@ -12,13 +12,14 @@ module fourbitsadder_tb;
     .a(a),
     .b(b),
     .Cin(Cin),
-    .C_out(C_out),
+    .cout(C_out),
     .Sum_total(Sum_total)
   );
 
   // Inicialización de señales
   initial begin
-    // Inicializa las señales de entrada
+    // Inicializa las señales de entrada y comienza el caso 1
+    
     a = 4'b1101; // Cambia estos valores según tus necesidades
     b = 4'b0110;
     Cin = 1'b0;  // Cambia 1 para llevar, 0 para no llevar
@@ -36,6 +37,41 @@ module fourbitsadder_tb;
     end
 
     // Puedes agregar más pruebas aquí si lo deseas
+    
+    #10; //Caso 2
+    
+    a = 4'b1000; // Cambia estos valores según tus necesidades
+    b = 4'b1111;
+    Cin = 1'b0;  // Cambia 1 para llevar, 0 para no llevar
+
+    // Espera un ciclo para que se actualicen las salidas
+    #1;
+
+    // Verificar las salidas
+    if (C_out === 4'b0001 && Sum_total === 4'b0111) begin
+	  $display("A = %b, B = %b, Carry in = %b, Carry out = %b, Suma = %b", a, b, Cin, C_out, Sum_total);
+      $display("Prueba PASADA: C_out y Sum_total son correctos.");
+    end else begin
+      $display("A = %b, B = %b, Carry in = %b, Carry out = %b, Suma = %b", a, b, Cin, C_out, Sum_total);
+      $display("Prueba FALLIDA: C_out o Sum_total no son correctos.");
+    end
+    
+    #10; // Caso 3
+    a = 4'b0010; // Cambia estos valores según tus necesidades
+    b = 4'b0101;
+    Cin = 1'b0;  // Cambia 1 para llevar, 0 para no llevar
+
+    // Espera un ciclo para que se actualicen las salidas
+    #1;
+
+    // Verificar las salidas
+    if (C_out === 4'b0000 && Sum_total === 4'b0111) begin
+	  $display("A = %b, B = %b, Carry in = %b, Carry out = %b, Suma = %b", a, b, Cin, C_out, Sum_total);
+      $display("Prueba PASADA: C_out y Sum_total son correctos.");
+    end else begin
+      $display("A = %b, B = %b, Carry in = %b, Carry out = %b, Suma = %b", a, b, Cin, C_out, Sum_total);
+      $display("Prueba FALLIDA: C_out o Sum_total no son correctos.");
+    end
 
     // Finalizar simulación
     $finish;
@@ -47,3 +83,4 @@ begin
  end
 
 endmodule
+
