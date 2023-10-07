@@ -250,4 +250,25 @@ Finalmente se presenta el módulo que abarca todo lo previamente trabajado, y co
 Así entonces se optó por dividir estos pasos en 2 submódulos que se usan en el bloque dedicado al complemento A2.
 
 ### Negador o Complemento A1
-Como se menciono previamente, este bloque operacional lo que busca es negar el número original
+Como se menciono previamente, este bloque operacional lo que busca es negar o no el número original dependiendo del signo asignado por el usuario, asi entonces se contempla la siguiente logica: 
+
+```bash
+module negadorfourbits(
+    input wire [3:0]num,
+    input wire sign,
+    output wire [3:0]negnum
+);
+
+assign negnum[0] = sign ^ num[0]; //Dependiendo del signo y el valor del bit lo niega o no
+assign negnum[1] = sign ^ num[1];
+assign negnum[2] = sign ^ num[2];
+assign negnum[3] = sign ^ num[3];
+
+endmodule
+	
+```
+Haciendo uso de compuertas lógicas **XOR** es posible negar cada bit que compone el número, para observar de manera grafica el script diseñado, a continuación se presenta el RTL asociado a él mismo:
+
+<p>
+  <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/8df1d9365b9ceec3dbedd285c85377e747aa4482/Practica_2/Imagenes_lab2/negadorfourbits.png" alt="RTLnegadorfourbits" width="500">
+</p>
