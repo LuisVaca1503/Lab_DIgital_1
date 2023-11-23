@@ -15,7 +15,7 @@ Tal como mencionamos de manera previa, el conteo de monedas se lleva a cabo de m
 
 ## Objetivo Principal
 
-* Diseñar, desarrollar e implementar una máquina contadora y clasificadora de monedas de forma serial (conteo por unidad) o 
+- Diseñar, desarrollar e implementar una máquina contadora y clasificadora de monedas de forma serial (conteo por unidad) o 
   paralela (conteo de manera simultánea).
 
 ## Objetivos Secundarios
