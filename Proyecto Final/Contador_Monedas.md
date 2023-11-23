@@ -25,3 +25,7 @@ Tal como mencionamos de manera previa, el conteo de monedas se lleva a cabo de m
 * Utilizar correctamente el hardware donde será usado para la clasificación y organización de monedas a través de los 
  sensores y otros dispositivos a implementar.
 
+## Descripción del Sistema
+
+Antes de continuar con el funcionamiento general del contador de monedas, es preciso mostrar los diferentes componentes usados en el montaje del contador y/o clasificador de monedas:
+
