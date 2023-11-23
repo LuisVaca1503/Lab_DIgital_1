@@ -33,5 +33,5 @@ Antes de continuar con el funcionamiento general del contador de monedas, es pre
 
 El primero y mas importante es la FPGA empleada para compilar los diferentes códigos y logica correspondiente para el sistema de conteo y clasificación de monedas:
 <p align="center">
-    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/9aebf77bc445d8eecb76f3c4a36e45488e020ce5/Proyecto%20Final/Imagenes/BlackIceMx-Fully-loaded.jpg" alt="fpga" width="320" height="300">
+    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/9aebf77bc445d8eecb76f3c4a36e45488e020ce5/Proyecto%20Final/Imagenes/BlackIceMx-Fully-loaded.jpg" alt="fpga" width="400" height="300">
 </p>
