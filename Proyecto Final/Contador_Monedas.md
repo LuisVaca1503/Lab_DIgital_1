@@ -1,1 +1,1 @@
-# Practica No.1 _Instalacion de Herramientas_
+# Proyecto final Electrónica Digital _Contador y clasificador de monedas_
