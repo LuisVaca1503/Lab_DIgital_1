@@ -74,4 +74,8 @@ En este al haber una via de comunicación entre los dos diodos, la transmision d
 
 Después de que pasa la moneda al presentar una interrupcion entre los diodos, se interrumpira la luz causando que la diferencia de potencial, baje 0 v esto interpretado en la fpga como nivel 0 lógico, asi que el objetivo principal con este mecanismo, es calcular el tiempo requerido para que una vez pase la moneda, la luz se interrumpa y cambie a "0" logico iniciando el conteo de monedas.
 
-Lo siguiente a evaluar es la clasificación de monedas
+Lo siguiente a evaluar es la clasificación de monedas tal como se mostró en la pieza mecanica:
+<p align="center">
+    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/b1a61f9a32235c8aa54e5fcc9f6a452d4ea9685c/Proyecto%20Final/Imagenes/Monedas.png" alt="fpga" width="500" height="300">
+</p>
+
