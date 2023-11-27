@@ -87,3 +87,7 @@ Una forma clara de explicarlo, es que cuando pasa una moneda por un sensor este 
 Y finalmente la LCD comunica al usuario la cantidad de monedas de cada tipo, y el valor total despues de haber ingresado las que el usuario desea cuantificar y clasificar.
 
 
+## Presupuesto
+
+
+
