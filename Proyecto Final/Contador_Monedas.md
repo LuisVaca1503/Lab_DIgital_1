@@ -90,7 +90,7 @@ Y finalmente la LCD comunica al usuario la cantidad de monedas de cada tipo, y e
 ## Problemas presentados
 
 
-El problema enfrentado al principio fue el diseño mecanico a implementar para la clasificación de monedas, puesto que al haber varios diseños que basaban netamente la clasificación con piezas  mecanicas, con engranajes o un sistema de rieles que transportara las monedas a un espacio donde se pudiera dividir las monedas, el reto caía en los huecos y como con un sensor detectaba el conteo de las monedas de ese valor por ejemplo un sistema de ejemplo sacado del canal de Mini Gear [Que es Anaconda](https://www.youtube.com/watch?v=ykvUE8Ad8Ls&ab_channel=MiniGear) que pudo haber funcionado pero no hubiera aplicado mucho lo aprendido con las FPGAs:
+El problema enfrentado al principio fue el diseño mecanico a implementar para la clasificación de monedas, puesto que al haber varios diseños que basaban netamente la clasificación con piezas  mecanicas, con engranajes o un sistema de rieles que transportara las monedas a un espacio donde se pudiera dividir las monedas, el reto caía en los huecos y como con un sensor detectaba el conteo de las monedas de ese valor por ejemplo un sistema de ejemplo sacado del canal de Mini Gear [How to Make Coin Sorting Machine from Cardboard](https://www.youtube.com/watch?v=ykvUE8Ad8Ls&ab_channel=MiniGear) que pudo haber funcionado pero no hubiera aplicado mucho lo aprendido con las FPGAs:
 
 
 <p align="center">
