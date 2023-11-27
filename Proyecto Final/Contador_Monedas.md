@@ -82,4 +82,5 @@ Como se puede observar cada hueco va un sensor, el primero y el ultimo son impor
 <p align="center">
     <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/485f092e83864e41a17c844bb7bdfd0b9b7eafd0/Proyecto%20Final/Imagenes/Pulsos.png" alt="fpga" width="700" height="300">
 </p>
+Una forma clara de explicarlo, es que cuando pasa una moneda por un sensor este manda un pulso en la señal de reloj en determinado periodo, dependiendo de la lógica aplicada esta al pasar manda un pulso interpretado como un "1" lógico o de plano mientras que la señal entre los dos sensores estaba en "1" al pasar la moneda pasa a "0", y también con la programación aplicada dependiendo de los sensores activados clasifica esta moneda como una de 100, 200, 500 o de 1000 y con la de 50 ya que no alcanza la altura de los demás con programación se crea un condicional, para que esta moneda sea clasificada como una de 50 al pasar solo por el sensor de entrada y salida donde respectivamente inicia y termina el conteo de monedas en ese momento de tiempo.
 
