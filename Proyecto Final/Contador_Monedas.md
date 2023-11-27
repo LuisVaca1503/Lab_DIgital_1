@@ -1,4 +1,4 @@
-![image](https://github.com/LuisVaca1503/Lab_DIgital_1/assets/92941277/efe550b5-a5be-4623-8bfe-af97c0bd8399)# Proyecto Final Electrónica Digital:  _Contador y clasificador de monedas_
+# Proyecto Final Electrónica Digital:  _Contador y clasificador de monedas_
 
 Autores:
 * David Esteban Becerra López, Correo: dbecerral@unal.edu.co
