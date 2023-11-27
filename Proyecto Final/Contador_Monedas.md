@@ -87,7 +87,13 @@ Una forma clara de explicarlo, es que cuando pasa una moneda por un sensor este 
 Y finalmente la LCD comunica al usuario la cantidad de monedas de cada tipo, y el valor total despues de haber ingresado las que el usuario desea cuantificar y clasificar.
 
 
-## Presupuesto
+## Problemas presentados
 
 
+El problema enfrentado al principio fue el diseño mecanico a implementar para la clasificación de monedas, puesto que al haber varios diseños que basaban netamente la clasificación con piezas  mecanicas, con engranajes o un sistema de rieles que transportara las monedas a un espacio donde se pudiera dividir las monedas, el reto caía en los huecos y como con un sensor detectaba el conteo de las monedas de ese valor por ejemplo un sistema de ejemplo que pudo haber funcionado pero no hubiera aplicado mucho lo aprendido con las FPGAs:
+
+
+<p align="center">
+    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/5addd7fe5925bba65222b1371389790093f2d392/Proyecto%20Final/Imagenes/EjemploModel.png" alt="fpga" width="700" height="300">
+</p>
 
