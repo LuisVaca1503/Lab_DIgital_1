@@ -109,6 +109,6 @@ Por ultimo las medidas de la moneda de 200 y 500, al ser muy parecidas en cuanto
 ## Herramientas y presupuesto requerido
 
 <p align="center">
-    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/1f52d545df2c462666a0df6c0265c472c5233ab9/Proyecto%20Final/Imagenes/Presupuesto.png" alt="fpga" width="600" height="300">
+    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/1f52d545df2c462666a0df6c0265c472c5233ab9/Proyecto%20Final/Imagenes/Presupuesto.png" alt="fpga" width="500" height="300">
 </p>
 
