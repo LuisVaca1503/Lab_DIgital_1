@@ -60,3 +60,8 @@ A pesar de haber una variedad de diseños complejos y dinámicos para la clasifi
 </p>
 
 Cada sensor opera según la logica determinada de forma positiva o negativa, es decir se puede optar que los sensores sin ninguna interrupción, reciba en primera instancia el diodo emisor, una alimentación de 5v que activa el fotodiodo por la luz recibida, generando una corriente que hace que el nivel lógico sea 1, o que sea de forma inversa que una vez un objeto pasa por la area de comunicacion entre los dos leds, se active el sensor receptor y pase la corriente.
+He aqui una ilustración del proceso:
+
+<p align="center">
+    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/8b0a9053c8097102ef53491469367f8b3e61505e/Proyecto%20Final/Imagenes/Sensor%20M1.png" alt="fpga" width="700" height="300">
+</p>
