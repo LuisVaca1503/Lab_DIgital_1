@@ -43,3 +43,11 @@ Para poder mostrar en pantalla la cantidad en COP y por monedas ingresadas por e
 <p align="center">
     <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/da363156e9aa01f930ffac587bd70ed7428c96ac/Proyecto%20Final/Imagenes/Sin%20t%C3%ADtulo.png" alt="fpga" width="400" height="300">
 </p>
+
+### Sensor infrarrojo
+
+Este consta de base con un LED emisor infrarrojo y un fototransistor receptor infrarrojo. El LED emisor infrarrojo emite una luz infrarroja cuando se le aplica corriente eléctrica, y el fotodiodo cuando la luz infrarroja incide sobre el , genera una corriente eléctrica en el componente receptor. La cantidad de corriente generada depende de la intensidad de la luz infrarroja recibida, (su función en el contador y/o clasificador de monedas sera descrita mas adelante).
+
+<p align="center">
+    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/1dbd5d0e4d31522474e511a7f39b08bb439617dd/Proyecto%20Final/Imagenes/LED.png" alt="fpga" width="400" height="300">
+</p>
