@@ -97,5 +97,7 @@ El problema enfrentado al principio fue el diseño mecanico a implementar para l
     <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/5addd7fe5925bba65222b1371389790093f2d392/Proyecto%20Final/Imagenes/EjemploModel.png" alt="fpga" width="700" height="300">
 </p>
 
-Sin embargo con un vídeo en especifico nos dio una via de desarrollo concreta que basaba su potencial en la programación con verilog, y usando la FPGA Black Ice 40, aunque el vídeo hace su desarrollo completamente desde Arduino [¿Cómo hacer Contador de Monedas? | Sensor de Monedas IR |](https://www.youtube.com/watch?v=Wp4v_5VEzWw&t=255s&ab_channel=%C3%9AtilMenteGeek)
+Sin embargo con un vídeo en especifico nos dio una via de desarrollo concreta que basaba su potencial en la programación con verilog, y usando la FPGA Black Ice 40, aunque el vídeo hace su desarrollo completamente desde Arduino [¿Cómo hacer Contador de Monedas? | Sensor de Monedas IR |](https://www.youtube.com/watch?v=Wp4v_5VEzWw&t=255s&ab_channel=%C3%9AtilMenteGeek).
+
+El siguiente problema es la utilizacion de la FPGA y el lenguaje de descripción de hardware Verilog, por ejemplo en Arduino se puede definir los valores de voltaje al cual se interprete como un "1" lógico o el "0" lógico a que rangos de tensión, sin embargo la FPGA Black Ice40, tiene por defecto esos valores y no es posible modificarlos asi que todo el proceso para adecuar esos rangos de tensión eran controlados por las resistencias conectados a los sensores, "1" es 3.3v hacia adelante y "0"  0.8v hacia atras.
 
