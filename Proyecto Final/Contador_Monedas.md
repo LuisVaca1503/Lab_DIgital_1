@@ -35,3 +35,11 @@ El primero y mas importante es la FPGA empleada para compilar los diferentes có
 <p align="center">
     <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/9aebf77bc445d8eecb76f3c4a36e45488e020ce5/Proyecto%20Final/Imagenes/BlackIceMx-Fully-loaded.jpg" alt="fpga" width="400" height="300">
 </p>
+
+### LCD 16x2
+
+Para poder mostrar en pantalla la cantidad en COP y por monedas ingresadas por el usuario es necesario una interfaz. Por ende es necesario una LCD 16x2 que pueda indicar los datos de interés.
+
+<p align="center">
+    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/da363156e9aa01f930ffac587bd70ed7428c96ac/Proyecto%20Final/Imagenes/Sin%20t%C3%ADtulo.png" alt="fpga" width="400" height="300">
+</p>
