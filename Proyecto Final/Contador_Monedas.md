@@ -63,5 +63,5 @@ Cada sensor opera según la logica determinada de forma positiva o negativa, es 
 He aqui una ilustración del proceso:
 
 <p align="center">
-    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/8b0a9053c8097102ef53491469367f8b3e61505e/Proyecto%20Final/Imagenes/Sensor%20M1.png" alt="fpga" width="700" height="300">
+    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/8b0a9053c8097102ef53491469367f8b3e61505e/Proyecto%20Final/Imagenes/Sensor%20M1.png" alt="fpga" width="500" height="300">
 </p>
