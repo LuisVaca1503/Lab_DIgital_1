@@ -65,3 +65,9 @@ He aqui una ilustración del proceso:
 <p align="center">
     <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/8b0a9053c8097102ef53491469367f8b3e61505e/Proyecto%20Final/Imagenes/Sensor%20M1.png" alt="fpga" width="500" height="300">
 </p>
+
+En este al haber una via de comunicación entre los dos diodos, la transmision de la luz infrarroja por parte del emisor entregara los 5v al receptor, generando una corriente.
+
+<p align="center">
+    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/78c06574f59a965f645531a1102429b00edd70b9/Proyecto%20Final/Imagenes/Sensor%20M2.png" alt="fpga" width="500" height="300">
+</p>
