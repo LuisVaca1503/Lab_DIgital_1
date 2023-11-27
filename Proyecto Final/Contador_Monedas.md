@@ -84,3 +84,6 @@ Como se puede observar cada hueco va un sensor, el primero y el ultimo son impor
 </p>
 Una forma clara de explicarlo, es que cuando pasa una moneda por un sensor este manda un pulso en la señal de reloj en determinado periodo, dependiendo de la lógica aplicada esta al pasar manda un pulso interpretado como un "1" lógico o de plano mientras que la señal entre los dos sensores estaba en "1" al pasar la moneda pasa a "0", y también con la programación aplicada dependiendo de los sensores activados clasifica esta moneda como una de 100, 200, 500 o de 1000 y con la de 50 ya que no alcanza la altura de los demás con programación se crea un condicional, para que esta moneda sea clasificada como una de 50 al pasar solo por el sensor de entrada y salida donde respectivamente inicia y termina el conteo de monedas en ese momento de tiempo.
 
+Y finalmente la LCD comunica al usuario la cantidad de monedas de cada tipo, y el valor total despues de haber ingresado las que el usuario desea cuantificar y clasificar.
+
+
