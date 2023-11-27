@@ -78,4 +78,8 @@ Lo siguiente a evaluar es la clasificación de monedas tal como se mostró en la
 <p align="center">
     <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/b1a61f9a32235c8aa54e5fcc9f6a452d4ea9685c/Proyecto%20Final/Imagenes/Monedas.png" alt="fpga" width="500" height="300">
 </p>
+Como se puede observar cada hueco va un sensor, el primero y el ultimo son importantes para poder iniciar y cerrar el ciclo de conteo, y los demas están ubicados a diferentes alturas esto fue planteado así por el hecho de que cada moneda tiene una altura diferente, lo que pudó favorecer en gran medida la clasificación de estas dependiendo de las medidas físicas del alto de la moneda.
+<p align="center">
+    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/485f092e83864e41a17c844bb7bdfd0b9b7eafd0/Proyecto%20Final/Imagenes/Pulsos.png" alt="fpga" width="500" height="300">
+</p>
 
