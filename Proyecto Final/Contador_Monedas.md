@@ -51,3 +51,11 @@ Este consta de base con un LED emisor infrarrojo y un fototransistor receptor in
 <p align="center">
     <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/1dbd5d0e4d31522474e511a7f39b08bb439617dd/Proyecto%20Final/Imagenes/LED.png" alt="fpga" width="400" height="300">
 </p>
+
+## Funcionamiento y conexiones electricas.
+
+A pesar de haber una variedad de diseños complejos y dinámicos para la clasificación de monedas en función al espacio, o gran cantidad de monedas a clasificar como sucede en labores de contabilidad en un banco, se optó por un diseño mas simple como puede ser una ranura para el ingreso de monedas, pero esta en su camino de ingreso a un espacio como una alcancía, se decidió clasificarlas en ese proceso gracias a los sensores infrarrojo, he aqui un ejemplo para facilidad de comprensión del sistema:
+<p align="center">
+    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/14d1fcfd2e7d94fe866bb18b01ca98a796afde42/Proyecto%20Final/Imagenes/Mecanica.png" alt="fpga" width="400" height="300">
+</p>
+
