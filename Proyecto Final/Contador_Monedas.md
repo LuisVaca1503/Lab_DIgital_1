@@ -112,3 +112,4 @@ Por ultimo las medidas de la moneda de 200 y 500, al ser muy parecidas en cuanto
     <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/1f52d545df2c462666a0df6c0265c472c5233ab9/Proyecto%20Final/Imagenes/Presupuesto.png" alt="fpga" width="500" height="300">
 </p>
 
+Este seria el presupuesto total de herramientas necesarias para el montaje del contador y/o clasificador de monedas, sin embargo elementos como la FPGA, el cautín estaban a disposición del grupo, el primero por préstamo de laboratorio y el segundo por términos prácticos en la utilización de diferentes áreas de la carrera de ingeniería electrónica.
