@@ -103,6 +103,6 @@ El siguiente problema es la utilizacion de la FPGA y el lenguaje de descripción
 
 Por ultimo las medidas de la moneda de 200 y 500, al ser muy parecidas en cuanto a altura la diferencia entre el sensor para detectar la moneda de 200 y 500 era muy minima.
 <p align="center">
-    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/1c5e47695e3f5e133aa1f83314daafc37671b0bf/Proyecto%20Final/Imagenes/Nuevas.png" alt="fpga" width="100" height="100">
+    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/1c5e47695e3f5e133aa1f83314daafc37671b0bf/Proyecto%20Final/Imagenes/Nuevas.png" alt="fpga" width="300" height="300">
 </p>
 
