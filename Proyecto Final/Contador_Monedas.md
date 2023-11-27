@@ -97,5 +97,5 @@ El problema enfrentado al principio fue el diseño mecanico a implementar para l
     <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/5addd7fe5925bba65222b1371389790093f2d392/Proyecto%20Final/Imagenes/EjemploModel.png" alt="fpga" width="700" height="300">
 </p>
 
-Sin embargo con un vídeo en especif
+Sin embargo con un vídeo en especifico nos dio una via de desarrollo concreta que basaba su potencial en la programación con verilog, y usando la FPGA Black Ice 40, aunque el vídeo hace su desarrollo completamente desde Arduino [¿Cómo hacer Contador de Monedas? | Sensor de Monedas IR |](https://www.youtube.com/watch?v=Wp4v_5VEzWw&t=255s&ab_channel=%C3%9AtilMenteGeek)
 
