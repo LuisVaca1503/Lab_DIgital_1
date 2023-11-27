@@ -101,3 +101,8 @@ Sin embargo con un vídeo en especifico nos dio una via de desarrollo concreta q
 
 El siguiente problema es la utilizacion de la FPGA y el lenguaje de descripción de hardware Verilog, por ejemplo en Arduino se puede definir los valores de voltaje al cual se interprete como un "1" lógico o el "0" lógico a que rangos de tensión, sin embargo la FPGA Black Ice40, tiene por defecto esos valores y no es posible modificarlos asi que todo el proceso para adecuar esos rangos de tensión eran controlados por las resistencias conectados a los sensores, "1" es 3.3v hacia adelante y "0"  0.8v hacia atras.
 
+Por ultimo las medidas de la moneda de 200 y 500, al ser muy parecidas en cuanto a altura la diferencia entre el sensor para detectar la moneda de 200 y 500 era muy minima.
+<p align="center">
+    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/1c5e47695e3f5e133aa1f83314daafc37671b0bf/Proyecto%20Final/Imagenes/Nuevas.png" alt="fpga" width="700" height="300">
+</p>
+
