@@ -97,22 +97,41 @@ Finalmente, la pantalla LCD comunica al usuario la cantidad de monedas de cada t
 
 ## Problemas presentados
 
+### Diseño mecánico
 
-El problema enfrentado al principio fue el diseño mecanico a implementar para la clasificación de monedas, puesto que al haber varios diseños que basaban netamente la clasificación con piezas  mecanicas, con engranajes o un sistema de rieles que transportara las monedas a un espacio donde se pudiera dividir las monedas, el reto caía en los huecos y como con un sensor detectaba el conteo de las monedas de ese valor por ejemplo un sistema de ejemplo sacado del canal de Mini Gear [How to Make Coin Sorting Machine from Cardboard](https://www.youtube.com/watch?v=ykvUE8Ad8Ls&ab_channel=MiniGear) que pudo haber funcionado pero no hubiera aplicado mucho lo aprendido con las FPGAs:
+El problema enfrentado al principio fue el diseño mecánico a implementar para la clasificación de monedas, esto debido a los múltiples diseños y variaciones posibles que permitían la clasificación de las diferentes monedas. Desde diseños con engranajes o un sistema de rieles que transportara las monedas a un espacio donde se pudiera dividir las monedas, el reto yace establecer las condiciones que vamos a usar para el diseño, teniendo en cuenta factores como tamaño e implementación del sistema. Ejemplos vistos cómo en el siguiente caso [How to Make Coin Sorting Machine from Cardboard](https://www.youtube.com/watch?v=ykvUE8Ad8Ls&ab_channel=MiniGear) nos permiten establecer una mejor clasificación de manera mecánica, pero no establece un reto en cuanto a la parte de implementación de la FPGA:
 
 
 <p align="center">
     <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/5addd7fe5925bba65222b1371389790093f2d392/Proyecto%20Final/Imagenes/EjemploModel.png" alt="fpga" width="700" height="300">
 </p>
 
-Sin embargo con un vídeo en especifico nos dio una via de desarrollo concreta que basaba su potencial en la programación con verilog, y usando la FPGA Black Ice 40, aunque el vídeo hace su desarrollo completamente desde Arduino [¿Cómo hacer Contador de Monedas? | Sensor de Monedas IR |](https://www.youtube.com/watch?v=Wp4v_5VEzWw&t=255s&ab_channel=%C3%9AtilMenteGeek).
+Sin embargo, un vídeo en específico nos dio una vía de desarrollo concreta que basaba su potencial en la programación. Tenemos en cuenta que este caso fue desarrollado desde Arduino, pero a su vez, también establecemos que es un buen diseño, dado las condiciones con las cuales se manejan los sensores y las implicaciones que esto tiene a la hora de hacer la respectiva programación en Verilog. [¿Cómo hacer Contador de Monedas? | Sensor de Monedas IR |](https://www.youtube.com/watch?v=Wp4v_5VEzWw&t=255s&ab_channel=%C3%9AtilMenteGeek).
 
-El siguiente problema es la utilizacion de la FPGA y el lenguaje de descripción de hardware Verilog, por ejemplo en Arduino se puede definir los valores de voltaje al cual se interprete como un "1" lógico o el "0" lógico a que rangos de tensión, sin embargo la FPGA Black Ice40, tiene por defecto esos valores y no es posible modificarlos asi que todo el proceso para adecuar esos rangos de tensión eran controlados por las resistencias conectados a los sensores, "1" es 3.3v hacia adelante y "0"  0.8v hacia atras.
+### Denominación de las monedas
 
-Por ultimo las medidas de la moneda de 200 y 500, al ser muy parecidas en cuanto a altura la diferencia entre el sensor para detectar la moneda de 200 y 500 era muy minima.
+Para el caso colombiano, actualmente se tienen cerca de 9 monedas en circulación a nivel nacional, las cuales se distribuyen de la siguiente manera:
+(2) denominaciones de 50
+(2) denominaciones de 100
+(2) denominaciones de 200
+(2) denominaciones de 500
+(1) denominación de 1000
+Esto debido a que recientemente se ha iniciado un proceso de reemplazo en las monedas distribuidas en el país.
+
+Ahora, el problema deriva en que solamente vamos a usar un valor físico de las monedas, el cual es su diámetro. Este valor entre la denominación antigua y la denominación nueva, genera bastantes problemas, ya que hay casos en que el valor de diámetro se diferencia por muy poco. Para reducir la posibilidad de errores en el sistema, decidimos limitar el dispositivo a la denominación nueva de las monedas que se está implementando en la nación. [Billetes y Monedas en circulación](https://www.banrep.gov.co/es/billetes-monedas)
+
+Aun con las limitaciones a la nueva denominación de las monedas, el punto crítico del conteo será la diferenciación entre las monedas de 200 y 500 pesos, ya que son los que tienen valores de diámetro más cercano entre ellos.
 <p align="center">
     <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/1c5e47695e3f5e133aa1f83314daafc37671b0bf/Proyecto%20Final/Imagenes/Nuevas.png" alt="fpga" width="300" height="300">
 </p>
+
+
+### Uso de FPGA
+
+El siguiente problema es la utilización de la FPGA y el lenguaje de descripción de hardware Verilog. En Arduino se pueden llegar definir los valores de tensión que el dispositivo puede interpretar cómo un 1 o un 0 lógico; sin embargo, la FPGA Black Ice40, tiene establecido estos valores por defecto, así que todo el proceso para adecuar esos rangos de tensión, deberán ser controlados  a través de medios externos, como por ejemplo resistencias conectadas a los sensores, con el fin de lograr los siguientes rangos:
+
+- (0): 0<V<0.8
+- (1): 3.3<V<5
 
 ## Herramientas y presupuesto requerido
 
@@ -120,4 +139,4 @@ Por ultimo las medidas de la moneda de 200 y 500, al ser muy parecidas en cuanto
     <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/1f52d545df2c462666a0df6c0265c472c5233ab9/Proyecto%20Final/Imagenes/Presupuesto.png" alt="fpga" width="500" height="300">
 </p>
 
-Este seria el presupuesto total de herramientas necesarias para el montaje del contador y/o clasificador de monedas, sin embargo elementos como la FPGA, el cautín estaban a disposición del grupo, el primero por préstamo de laboratorio y el segundo por términos prácticos en la utilización de diferentes áreas de la carrera de ingeniería electrónica.
+Este sería el presupuesto total de herramientas necesarias para el montaje del contador y/o clasificador de monedas; sin embargo, elementos como la FPGA, el cautín estaban a disposición del grupo de manera previa; el primero por préstamo de laboratorio y el segundo por términos prácticos en la utilización de diferentes áreas de la carrera de ingeniería electrónica.
