@@ -111,11 +111,12 @@ Sin embargo, un vídeo en específico nos dio una vía de desarrollo concreta qu
 ### Denominación de las monedas
 
 Para el caso colombiano, actualmente se tienen cerca de 9 monedas en circulación a nivel nacional, las cuales se distribuyen de la siguiente manera:
-(2) denominaciones de 50
-(2) denominaciones de 100
-(2) denominaciones de 200
-(2) denominaciones de 500
-(1) denominación de 1000
+- (2) denominaciones de 50
+- (2) denominaciones de 100
+- (2) denominaciones de 200
+- (2) denominaciones de 500
+- (1) denominación de 1000
+
 Esto debido a que recientemente se ha iniciado un proceso de reemplazo en las monedas distribuidas en el país.
 
 Ahora, el problema deriva en que solamente vamos a usar un valor físico de las monedas, el cual es su diámetro. Este valor entre la denominación antigua y la denominación nueva, genera bastantes problemas, ya que hay casos en que el valor de diámetro se diferencia por muy poco. Para reducir la posibilidad de errores en el sistema, decidimos limitar el dispositivo a la denominación nueva de las monedas que se está implementando en la nación. [Billetes y Monedas en circulación](https://www.banrep.gov.co/es/billetes-monedas)
@@ -130,8 +131,8 @@ Aun con las limitaciones a la nueva denominación de las monedas, el punto crít
 
 El siguiente problema es la utilización de la FPGA y el lenguaje de descripción de hardware Verilog. En Arduino se pueden llegar definir los valores de tensión que el dispositivo puede interpretar cómo un 1 o un 0 lógico; sin embargo, la FPGA Black Ice40, tiene establecido estos valores por defecto, así que todo el proceso para adecuar esos rangos de tensión, deberán ser controlados  a través de medios externos, como por ejemplo resistencias conectadas a los sensores, con el fin de lograr los siguientes rangos:
 
-- (0): 0<V<0.8
-- (1): 3.3<V<5
+- ("0"): 0<V<0.8
+- ("1"): 3.3<V<5
 
 ## Herramientas y presupuesto requerido
 
