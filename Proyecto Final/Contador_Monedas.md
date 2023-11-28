@@ -6,12 +6,13 @@ Autores:
 * Luis Guillermo Vaca Rincon, Correo: lvacar@unal.edu.co
 
 ## Introducción
-Actualmente, el conteo de monedas es llevado a cabo en su mayoría de forma manual. Esto es posible gracias a la labor llevada a cabo por los trabajadores en sus diferentes áreas (contadores, bancarios, cajeros, etc.), e inclusive en actividades cotidianas y domésticas, todos y cada uno de nosotros lleva a cabo un proceso de conteo antes de realizar cualquier transacción. Sin embargo, el error humano es un factor a tener en cuenta a la hora de contar, e incluso en cantidades muy altas, se tienen que considerar factores de higiene a la hora de llevar a cabo dicho proceso.
+El conteo de monedas es un proceso el cual es llevado a cabo en su mayoría de forma manual, más gracias a los avances tecnológicos, este proceso se está automatizando, especialmente en grandes empresas, especialmente en bancos. Dicha labor es posible gracias a los trabajadores en sus diferentes áreas (contadores, bancarios, cajeros, etc.); sin embargo, esta actividad es también ejercida en menor escala, como en las actividades cotidianas y domésticas. Todos y cada uno de nosotros lleva a cabo un proceso de conteo antes de realizar cualquier transacción, no obstante, el error humano es un factor a tener en cuenta a la hora de contar, especialmente en cantidades muy altas y adicional a ello, se tienen que considerar factores de higiene a la hora de llevar a cabo dicho proceso. 
 
 <p align="center">
     <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/6419ff7ce85ac6e7a0c9e3b300fa56a284ae5e34/Proyecto%20Final/Imagenes/Ejemplo.png" alt="Ejemplo" width="320" height="300">
 </p>
-Tal como mencionamos de manera previa, el conteo de monedas se lleva a cabo de manera manual por procesos de conteo o de peso el  cual conlleva un factor del error humano, por lo cual es recomendable el uso de herramientas alternas que permitan una mayor eficiencia a la hora de contar y clasificar el capital.
+
+Es por ello que cada vez más se han establecido nuevas herramientas de conteo que permitan disminuir factores de error humano, que a su vez permiten mejores condiciones higiénicas y una mayor eficiencia a la hora de llevar a cabo procesos de conteo y de clasificación de capital.
 
 ## Objetivo Principal
 
@@ -31,14 +32,14 @@ Antes de continuar con el funcionamiento general del contador de monedas, es pre
 
 ### ice40-hx4k-MyStorm-BlackIce-Mx
 
-El primero y mas importante es la FPGA empleada para compilar los diferentes códigos y logica correspondiente para el sistema de conteo y clasificación de monedas:
+El primero y mas importante es la FPGA empleada para compilar los diferentes códigos y logica correspondiente para el sistema de conteo y clasificación de monedas. Para ello se hace uso de la FPGA Black Ice 40, el cual será el módulo central que permita toda la operación del sistema:
 <p align="center">
     <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/9aebf77bc445d8eecb76f3c4a36e45488e020ce5/Proyecto%20Final/Imagenes/BlackIceMx-Fully-loaded.jpg" alt="fpga" width="400" height="300">
 </p>
 
 ### LCD 16x2
 
-Para poder mostrar en pantalla la cantidad en COP y por monedas ingresadas por el usuario es necesario una interfaz. Por ende es necesario una LCD 16x2 que pueda indicar los datos de interés.
+Para poder mostrar en pantalla la cantidad de monedas ingresadas por valor y el monto total de dinero ingresado en el dispositivo por el usuario, es necesario una interfaz visual que permita mostrar dichos datos. Por ende, es necesario una LCD (para este caso se estableció una de formato 16x2) que pueda indicar los datos de interés.
 
 <p align="center">
     <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/da363156e9aa01f930ffac587bd70ed7428c96ac/Proyecto%20Final/Imagenes/Sin%20t%C3%ADtulo.png" alt="fpga" width="400" height="300">
@@ -46,7 +47,7 @@ Para poder mostrar en pantalla la cantidad en COP y por monedas ingresadas por e
 
 ### Sensor infrarrojo
 
-Este consta de base con un LED emisor infrarrojo y un fototransistor receptor infrarrojo. El LED emisor infrarrojo emite una luz infrarroja cuando se le aplica corriente eléctrica, y el fotodiodo cuando la luz infrarroja incide sobre el , genera una corriente eléctrica en el componente receptor. La cantidad de corriente generada depende de la intensidad de la luz infrarroja recibida, (su función en el contador y/o clasificador de monedas sera descrita mas adelante).
+Este sistema cuenta con un LED emisor infrarrojo y un fototransistor receptor infrarrojo. El LED emisor infrarrojo emite una luz infrarroja cuando se le aplica corriente eléctrica, y el fotodiodo recibe dicha luz infrarroja, la cual incide sobre el mismo, generando una corriente eléctrica en el componente receptor. La cantidad de corriente generada depende de la intensidad de la luz infrarroja recibida, (su función en el contador y/o clasificador de monedas será descrita más adelante).
 
 <p align="center">
     <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/1dbd5d0e4d31522474e511a7f39b08bb439617dd/Proyecto%20Final/Imagenes/LED.png" alt="fpga" width="400" height="300">
@@ -54,13 +55,16 @@ Este consta de base con un LED emisor infrarrojo y un fototransistor receptor in
 
 ## Funcionamiento y conexiones electricas.
 
-A pesar de haber una variedad de diseños complejos y dinámicos para la clasificación de monedas en función al espacio, o gran cantidad de monedas a clasificar como sucede en labores de contabilidad en un banco, se optó por un diseño mas simple como puede ser una ranura para el ingreso de monedas, pero esta en su camino de ingreso a un espacio como una alcancía, se decidió clasificarlas en ese proceso gracias a los sensores infrarrojo, he aqui un ejemplo para facilidad de comprensión del sistema:
+A pesar de haber una variedad de diseños complejos y dinámicos para la clasificación de monedas en función al espacio, o gran cantidad de monedas a contar, tal como sucede en labores de contabilidad en un banco, se optó por un diseño simple como puede ser una ranura para el ingreso de monedas de manera individual, que a su vez da ingreso a un espacio de almacenamiento, similar a una alcancía. Se decidió clasificarlas de dicha forma gracias a los sensores infrarrojos, he aquí una primera muestra de desarrollo para facilidad de comprensión del sistema:
+
 <p align="center">
     <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/14d1fcfd2e7d94fe866bb18b01ca98a796afde42/Proyecto%20Final/Imagenes/Mecanica.png" alt="fpga" width="600" height="300">
 </p>
 
-Cada sensor opera según la logica determinada de forma positiva o negativa, es decir se puede optar que los sensores sin ninguna interrupción, reciba en primera instancia el diodo emisor, una alimentación de 5v que activa el fotodiodo por la luz recibida, generando una corriente que hace que el nivel lógico sea 1, o que sea de forma inversa que una vez un objeto pasa por la area de comunicacion entre los dos leds, se active el sensor receptor y pase la corriente.
-He aqui una ilustración del proceso:
+Cada sensor opera según la lógica determinada, ya sea positiva o negativa, es decir que en los sensores se puede optar por uno de los siguientes casos:
+- Sin ninguna interrupción, el diodo emisor reciba en primera instancia una alimentación de 5v que mantiene activo el fotodiodo por la luz recibida, generando una corriente que hace que el nivel lógico sea 1 de forma estable.
+- De forma alterna, que una vez un objeto pasa por el área de comunicación entre los dos sensores, se active el sensor receptor y pase la corriente.
+He aquí una ilustración del proceso:
 
 <p align="center">
     <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/8b0a9053c8097102ef53491469367f8b3e61505e/Proyecto%20Final/Imagenes/Sensor%20M1.png" alt="fpga" width="500" height="300">
@@ -72,19 +76,23 @@ En este al haber una via de comunicación entre los dos diodos, la transmision d
     <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/78c06574f59a965f645531a1102429b00edd70b9/Proyecto%20Final/Imagenes/Sensor%20M2.png" alt="fpga" width="500" height="300">
 </p>
 
-Después de que pasa la moneda al presentar una interrupcion entre los diodos, se interrumpira la luz causando que la diferencia de potencial, baje 0 v esto interpretado en la fpga como nivel 0 lógico, asi que el objetivo principal con este mecanismo, es calcular el tiempo requerido para que una vez pase la moneda, la luz se interrumpa y cambie a "0" logico iniciando el conteo de monedas.
+Después de que pasa la moneda, se presenta una interrupción entre los diodos, causando una diferencia de potencial, hasta un valor de tensión que sea interpretado en la fpga como un nivel 0 lógico. Así que, el objetivo con este mecanismo, es regular el tiempo de exposición requerido (junto con factores en los sensores como caída de tensión), para que una vez pase la moneda, la luz se interrumpa y cambie a "0" lógico para llevar a cabo el respectivo conteo.
 
 Lo siguiente a evaluar es la clasificación de monedas tal como se mostró en la pieza mecanica:
 <p align="center">
     <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/b1a61f9a32235c8aa54e5fcc9f6a452d4ea9685c/Proyecto%20Final/Imagenes/Monedas.png" alt="fpga" width="500" height="300">
 </p>
-Como se puede observar cada hueco va un sensor, el primero y el ultimo son importantes para poder iniciar y cerrar el ciclo de conteo, y los demas están ubicados a diferentes alturas esto fue planteado así por el hecho de que cada moneda tiene una altura diferente, lo que pudó favorecer en gran medida la clasificación de estas dependiendo de las medidas físicas del alto de la moneda.
+Como se puede observar, el sensor tiene un espacio determinado. El primero y el último son importantes para poder iniciar y cerrar el ciclo de conteo, y los demás están ubicados a diferentes alturas. Esto fue planteado así por el hecho de que cada moneda tiene una altura diferente, lo que puede favorecer en gran medida la clasificación de estas, dependiendo de las medidas físicas de la moneda.
 <p align="center">
     <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/485f092e83864e41a17c844bb7bdfd0b9b7eafd0/Proyecto%20Final/Imagenes/Pulsos.png" alt="fpga" width="700" height="300">
 </p>
-Una forma clara de explicarlo, es que cuando pasa una moneda por un sensor este manda un pulso en la señal de reloj en determinado periodo, dependiendo de la lógica aplicada esta al pasar manda un pulso interpretado como un "1" lógico o de plano mientras que la señal entre los dos sensores estaba en "1" al pasar la moneda pasa a "0", y también con la programación aplicada dependiendo de los sensores activados clasifica esta moneda como una de 100, 200, 500 o de 1000 y con la de 50 ya que no alcanza la altura de los demás con programación se crea un condicional, para que esta moneda sea clasificada como una de 50 al pasar solo por el sensor de entrada y salida donde respectivamente inicia y termina el conteo de monedas en ese momento de tiempo.
+Con todo lo anterior explicado, se propone la siguiente forma de funcionamiento del sistema: 
 
-Y finalmente la LCD comunica al usuario la cantidad de monedas de cada tipo, y el valor total despues de haber ingresado las que el usuario desea cuantificar y clasificar.
+Cuando pasa una moneda por un sensor, este manda un pulso en la señal de reloj en determinado periodo; teniendo en cuenta la lógica aplicada, de manera previa se establece que los sensores se mantienen en nivel "1", pero al pasar la moneda, este nivel cambia a "0". Esto en cuanto a la disposición general de los sensores.
+
+También con la programación aplicada, dependiendo de los sensores activados (excluyendo los sensores de entrada y salida de la moneda), se clasifica cada moneda como una de 50, 100, 200, 500 o 1000, dependiendo de la cantidad de sensores activados antes de salir la moneda del dispositivo. Con la moneda de 50 pesos se hace una disposición especial, donde solamente este hace contacto con los sensores de entrada y salida del dispositivo, debido a que es la moneda de menor denominación y tamaño, permitiendo por medio de programación un condicional, para que esta moneda sea clasificada como una de 50 al pasar solo por dichos sensores en el proceso de conteo.
+
+Finalmente, la pantalla LCD comunica al usuario la cantidad de monedas de cada tipo, y el valor total despues de haber ingresado las que el usuario desea cuantificar y clasificar.
 
 
 ## Problemas presentados
