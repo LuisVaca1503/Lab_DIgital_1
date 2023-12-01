@@ -149,19 +149,24 @@ Una vez completado y determinado todo lo anterior, procedemos a hacer la impleme
 ### Simulaciones (GTKWave)
 
 
+<p align="center">
+    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Proyecto%20Final/Imagenes/GTKWave%20-%20%20Proyecto.jpeg" alt="RTL - Traductor" width="500">
+</p>
+
+Aquí es posible ver un ejemplo de lo sucedido a la hora de ingresar una moneda de 500 pesos. Los sensores 1,2,5 se encuentran en cero. A partir de esto, se clasifica y se asigna su valor al acumulado total, que como se puede observar en el caso, cumple con lo requerido en la clasificación.
 
 ### Esquema RTL
 
 <p align="center">
-    <img src="https://github.dev/LuisVaca1503/Lab_DIgital_1/blob/main/Proyecto%20Final/Imagenes/Monedas.png" alt="RTL - Traductor" width="500">
+    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Proyecto%20Final/Imagenes/traductor.png" alt="RTL - Traductor" width="500">
 </p>
 
 <p align="center">
-    <img src="https://github.dev/LuisVaca1503/Lab_DIgital_1/blob/main/Proyecto%20Final/Imagenes/Monedas.png" alt="RTL - Traductor" width="500">
+    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Proyecto%20Final/Imagenes/sensores.png" alt="RTL - Sensores" width="500">
 </p>
 
 <p align="center">
-    <img src="https://github.dev/LuisVaca1503/Lab_DIgital_1/blob/main/Proyecto%20Final/Imagenes/Monedas.png" alt="RTL - Traductor" width="500">
+    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Proyecto%20Final/Imagenes/delay.png" alt="RTL - Delay" width="500">
 </p>
 
 ### Funcionamiento (Video)
