@@ -150,16 +150,22 @@ Una vez completado y determinado todo lo anterior, procedemos a hacer la impleme
 
 
 <p align="center">
-    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Proyecto%20Final/Imagenes/GTKWave%20-%20%20Proyecto.jpeg" alt="GTK Wave 500">
+    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Proyecto%20Final/Imagenes/GTKWave%20-%20%20Proyecto.jpeg" alt="GTK Wave 500 - 1">
 </p>
 
 Aquí es posible ver un ejemplo de lo sucedido a la hora de ingresar una moneda de 500 pesos. Los sensores 1,2,5 se encuentran en cero. A partir de esto, se clasifica y se asigna su valor al acumulado total, que como se puede observar en el caso, cumple con lo requerido en la clasificación.
 
 <p align="center">
-    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Proyecto%20Final/Imagenes/GTKWave%20-%20%20Proyecto%202.jpeg" alt="RTL">
+    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Proyecto%20Final/Imagenes/GTKWave%20-%20%20Proyecto%202.jpeg" alt="GTK Wave 500 - 2">
 </p>
 
 Siguiendo con el ejemplo de la moneda de $500, aquí se observa como el módulo de traductor divide el valor enviado por el módulo de sensores, en sus respectivas unidades, decenas, centenas y miles. A fin de expresarlas en un formato ideal para impresión en el LCD,  se designan las variables de uni_sal, dec_sal, cen_sal, mil_sal que permiten contener el valor hexadecimal de cada número.
+
+<p align="center">
+    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Proyecto%20Final/Imagenes/GTKWave%20-%20Proyecto%203.jpeg" alt="GTK Wave 3">
+</p>
+
+Finalmente, en el módulo LCD, podemos observar como se realiza el cambio de mensaje al detectar que la moneda ya ingreso y está siendo clasificada.
 
 ### Esquema RTL
 
@@ -183,7 +189,9 @@ Siguiendo con el ejemplo de la moneda de $500, aquí se observa como el módulo 
 
 #### Top
 
-
+<p align="center">
+    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Proyecto%20Final/Imagenes/Top.jpeg" alt="RTL - Top">
+</p>
 
 ### Funcionamiento (Video)
 
