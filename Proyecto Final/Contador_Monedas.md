@@ -141,3 +141,28 @@ El siguiente problema es la utilización de la FPGA y el lenguaje de descripció
 </p>
 
 Este sería el presupuesto total de herramientas necesarias para el montaje del contador y/o clasificador de monedas; sin embargo, elementos como la FPGA, el cautín estaban a disposición del grupo de manera previa; el primero por préstamo de laboratorio y el segundo por términos prácticos en la utilización de diferentes áreas de la carrera de ingeniería electrónica.
+
+## Implementación
+
+Una vez completado y determinado todo lo anterior, procedemos a hacer la implementación del proyecto:
+
+### Simulaciones (GTKWave)
+
+
+
+### Esquema RTL
+
+<p align="center">
+    <img src="https://github.dev/LuisVaca1503/Lab_DIgital_1/blob/main/Proyecto%20Final/Imagenes/Monedas.png" alt="RTL - Traductor" width="500">
+</p>
+
+<p align="center">
+    <img src="https://github.dev/LuisVaca1503/Lab_DIgital_1/blob/main/Proyecto%20Final/Imagenes/Monedas.png" alt="RTL - Traductor" width="500">
+</p>
+
+<p align="center">
+    <img src="https://github.dev/LuisVaca1503/Lab_DIgital_1/blob/main/Proyecto%20Final/Imagenes/Monedas.png" alt="RTL - Traductor" width="500">
+</p>
+
+### Funcionamiento (Video)
+
