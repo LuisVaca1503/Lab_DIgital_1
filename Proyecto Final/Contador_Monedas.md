@@ -150,24 +150,40 @@ Una vez completado y determinado todo lo anterior, procedemos a hacer la impleme
 
 
 <p align="center">
-    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Proyecto%20Final/Imagenes/GTKWave%20-%20%20Proyecto.jpeg" alt="RTL - Traductor" width="500">
+    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Proyecto%20Final/Imagenes/GTKWave%20-%20%20Proyecto.jpeg" alt="GTK Wave 500">
 </p>
 
 Aquí es posible ver un ejemplo de lo sucedido a la hora de ingresar una moneda de 500 pesos. Los sensores 1,2,5 se encuentran en cero. A partir de esto, se clasifica y se asigna su valor al acumulado total, que como se puede observar en el caso, cumple con lo requerido en la clasificación.
 
+<p align="center">
+    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Proyecto%20Final/Imagenes/GTKWave%20-%20%20Proyecto%202.jpeg" alt="RTL">
+</p>
+
+Siguiendo con el ejemplo de la moneda de $500, aquí se observa como el módulo de traductor divide el valor enviado por el módulo de sensores, en sus respectivas unidades, decenas, centenas y miles. A fin de expresarlas en un formato ideal para impresión en el LCD,  se designan las variables de uni_sal, dec_sal, cen_sal, mil_sal que permiten contener el valor hexadecimal de cada número.
+
 ### Esquema RTL
 
-<p align="center">
-    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Proyecto%20Final/Imagenes/traductor.png" alt="RTL - Traductor" width="500">
-</p>
+#### Traductor
 
 <p align="center">
-    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Proyecto%20Final/Imagenes/sensores.png" alt="RTL - Sensores" width="500">
+    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Proyecto%20Final/Imagenes/traductor.png" alt="RTL - Traductor">
 </p>
 
+#### Sensores
+
 <p align="center">
-    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Proyecto%20Final/Imagenes/delay.png" alt="RTL - Delay" width="500">
+    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Proyecto%20Final/Imagenes/sensores.png" alt="RTL - Sensores">
 </p>
+
+#### Delay
+
+<p align="center">
+    <img src="https://github.com/LuisVaca1503/Lab_DIgital_1/blob/main/Proyecto%20Final/Imagenes/delay.png" alt="RTL - Delay">
+</p>
+
+#### Top
+
+
 
 ### Funcionamiento (Video)
 
